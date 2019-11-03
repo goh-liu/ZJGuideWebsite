@@ -1,0 +1,101 @@
+#div1{
+    margin-top: 54px;
+    padding: 0px 0px;
+    position: fixed;
+    z-index: 99999;
+}
+.div1Item2{
+    height: 50px;
+    margin-top: 5px;
+    padding-top: 10px;
+    border-top: 1px solid lightgray;
+    text-align: center;
+}
+.div1Item3{
+    height: 420px;
+    margin-top: 5px;
+    padding-top: 10px;
+
+}
+#div2{
+    margin-top: 54px;
+    padding: 0px 10px;
+    margin-left: 24%;
+    position:absolute;
+    z-index: 100;
+
+}
+
+.anonymityItem{
+    margin: 5px 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid darkgray;
+}
+.headImg{
+    width: 50px;
+    height: 50px;
+}
+
+.itemContent{
+    margin: 6px 0;
+    padding-left: 25px;
+
+}
+.itemContent>div{
+    margin: 8px 0px;
+}
+
+.itemContent img {
+    width: 80px;
+    height: 80px;
+}
+
+
+.itemComment{
+    padding-top: 10px;
+    border-top: 1px solid gainsboro;
+}
+.anonWrite{
+    text-align: center;
+}
+.anonWrite>h3{
+    display: inline;
+}
+.anonWrite>button{
+    display: inline;
+    margin-left: 20px;
+}
+.anonWrite>div{
+    margin-top: 10px;
+    padding: 5px 5px;
+
+}
+.anonPrice{
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 35px;
+}
+
+.anonPrice>button{
+    margin-right: 10px;
+}
+.anonPrice img{
+    width: 60px;
+    height: 60px;
+    padding: 5px 0px;
+    margin-right: 10px;
+}
+
+
+.userAnonsPanel{
+    height: 415px;
+    padding: 5px 5px;
+    border: 1px solid lightgray;
+    overflow-y: auto;
+    margin-right: -18px;
+}
+.userAnonsItem{
+    margin-top: 5px;
+    border-bottom: 1px solid lightgray;
+}
+

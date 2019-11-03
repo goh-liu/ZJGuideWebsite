@@ -20,7 +20,7 @@ import java.util.Map;
  * @date 2019/7/30 - 12:43
  */
 public class UserServlet extends BaseServlet {
-    //跳转到注册页面
+    //跳转到首页页面
     public String indexUI(HttpServletRequest req, HttpServletResponse resp) throws Exception {
         return "/index.jsp";
     }
@@ -41,7 +41,8 @@ public class UserServlet extends BaseServlet {
         Map<String, String[]> map = req.getParameterMap();
         User user = new User();
         BeanUtils.populate(user,map);
-        //判断是否有同名或者同电话号码的，若有，不允许注册
+        //判断是否有同名或
+        // 者同电话号码的，若有，不允许注册
         UserService userService = new UserServiceImp();
         String flag = userService.findUserbyNameOrTele(user.getUname(),user.getTelephone());
         //存在，不允许登陆
@@ -51,7 +52,7 @@ public class UserServlet extends BaseServlet {
                         "window.location.href='/ZJGuideWebsite_war_exploded/UserServlet?method=registerUI';</script>");
                 resp.getWriter().flush();
             }else {
-                resp.getWriter().print("<script>alert('注册失败！该账号已存在，请登录！');" +
+                resp.getWriter().print("<script>alert('注册失败！该手机号已注册，请登录！');" +
                         "window.location.href='/ZJGuideWebsite_war_exploded/UserServlet?method=loginUI';</script>");
                 resp.getWriter().flush();
             }
