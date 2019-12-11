@@ -7,9 +7,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcb2bd5e-b0eb-4d2d-b749-019dc2ce00e4" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/web/servlet/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/web/servlet/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/anon.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/anon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/anonymityFriend.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/anonymityFriend.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZJGuideWebsite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ZJGuideWebsite.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/wf/captcha/Captcha.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/wf/captcha/ChineseCaptcha.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/wf/captcha/ChineseCaptchaAbstract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/wf/captcha/ChineseGifCaptcha.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/wf/captcha/Encoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/wf/captcha/GifCaptcha.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/wf/captcha/GifEncoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/wf/captcha/Quant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/wf/captcha/Randoms.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/wf/captcha/SpecCaptcha.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/wf/captcha/servlet/CaptchaServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/wf/captcha/utils/CaptchaUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/wf/nulls.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/css/anon.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/css/anon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/jsp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/jsp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/jsp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/wf/captcha/Captcha.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/wf/captcha/ChineseCaptcha.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/wf/captcha/ChineseCaptchaAbstract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/wf/captcha/ChineseGifCaptcha.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/wf/captcha/Encoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/wf/captcha/GifCaptcha.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/wf/captcha/GifEncoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/wf/captcha/Quant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/wf/captcha/Randoms.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/wf/captcha/SpecCaptcha.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/wf/captcha/servlet/CaptchaServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/wf/captcha/utils/CaptchaUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/wf/nulls.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wf/captcha/Captcha.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wf/captcha/ChineseCaptcha.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wf/captcha/ChineseCaptchaAbstract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wf/captcha/ChineseGifCaptcha.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wf/captcha/Encoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wf/captcha/GifCaptcha.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wf/captcha/GifEncoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wf/captcha/Quant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wf/captcha/Randoms.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wf/captcha/SpecCaptcha.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wf/captcha/servlet/CaptchaServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wf/captcha/utils/CaptchaUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wf/nulls.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/anon.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/anon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/login.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,108 +70,62 @@
     <favorites_list name="ZJGuideWebsite" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/js/anon.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="136" column="27" selection-start-line="136" selection-start-column="27" selection-end-line="136" selection-end-column="27" />
-              <folding>
-                <element signature="n#!!block;n#initFileInput#0" />
-                <element signature="e#802#808#0" expanded="true" />
-                <element signature="e#809#815#0" expanded="true" />
-                <element signature="e#816#822#0" expanded="true" />
-                <element signature="n#!!block;n#anon_del#0" />
-                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-                <element signature="e#88#94#0" expanded="true" />
-                <element signature="e#94#100#0" expanded="true" />
-                <element signature="e#109#115#0" expanded="true" />
-                <element signature="e#115#121#0" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-                <element signature="e#91#97#0" expanded="true" />
-                <element signature="e#97#103#0" expanded="true" />
-                <element signature="e#112#118#0" expanded="true" />
-                <element signature="e#118#124#0" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-                <element signature="e#88#94#0" expanded="true" />
-                <element signature="e#94#100#0" expanded="true" />
-                <element signature="e#109#115#0" expanded="true" />
-                <element signature="e#115#121#0" expanded="true" />
-                <element signature="n#style#0;n#strong#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#443#449#0" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#2;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#749#755#0" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-                <element signature="e#62#68#1" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-                <element signature="e#62#68#1" expanded="true" />
-                <element signature="e#42#48#0" expanded="true" />
-                <element signature="e#64#70#0" expanded="true" />
-                <element signature="e#70#76#0" expanded="true" />
-                <element signature="e#160#166#0" expanded="true" />
-                <element signature="e#166#172#0" expanded="true" />
-                <element signature="e#42#48#0" expanded="true" />
-                <element signature="e#50#56#0" expanded="true" />
-                <element signature="e#73#79#0" expanded="true" />
-                <element signature="e#95#101#0" expanded="true" />
-                <element signature="e#101#107#0" expanded="true" />
-                <element signature="e#196#202#0" expanded="true" />
-                <element signature="e#202#208#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/web/servlet/AnonServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1191">
-              <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="70" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/jsp/anonymityFriend.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="218" column="27" selection-start-line="218" selection-start-column="13" selection-end-line="218" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/jsp/oneAnonMap.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-787">
-              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/web/adminUI/adminUI.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="12">
+                  <caret line="100" column="39" selection-start-line="100" selection-start-column="39" selection-end-line="100" selection-end-column="39" />
+                  <folding>
+                    <element signature="n#style#0;n#el-table#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/web/adminUI/css/adminUI.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="216">
+                  <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/adminUI/js/adminUI.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1190">
+                  <caret line="70" column="14" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="facelets" />
-        <option value="CSS File" />
         <option value="Interface" />
-        <option value="JavaScript File" />
         <option value="Class" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
         <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>icon</find>
-      <find>favicon</find>
-      <find>ZJGuideWebsite_war_exploded</find>
       <find>&lt;%--注册模块--%&gt;</find>
       <find>/UserServlet?method=indexUI</find>
       <find>language</find>
@@ -155,6 +153,9 @@
       <find>redis</find>
       <find>isOneselfLike</find>
       <find>returnLoginUid</find>
+      <find>publish</find>
+      <find>anon</find>
+      <find>showHotOrNew</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -165,9 +166,11 @@
       <replace>oneAnonMap.get('anonDistrict').</replace>
       <replace>'</replace>
       <replace>data</replace>
+      <replace>showTroopsType</replace>
     </replaceStrings>
     <dirStrings>
       <dir>F:\IT\java\IDEA\ZJGuideWebsite\web\lib</dir>
+      <dir>F:\IT\java\IDEA\ZJGuideWebsite\src\com\wf</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -177,20 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/web/base/BaseServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/web/servlet/register.java" />
-        <option value="$PROJECT_DIR$/src/com/web/servlet/Register.java" />
-        <option value="$PROJECT_DIR$/src/com/web/servlet/RegisterServlet.java" />
-        <option value="$PROJECT_DIR$/web/css/login.css" />
-        <option value="$PROJECT_DIR$/src/com/web/servlet/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/service/imp/UserServiceImp.java" />
-        <option value="$PROJECT_DIR$/src/com/utils/JDBCUtils.java" />
-        <option value="$PROJECT_DIR$/src/c3p0-config.xml" />
-        <option value="$PROJECT_DIR$/src/com/utils/CookieUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/utils/utils/CookieUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/utils/MyBeanUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/domain/User.java" />
-        <option value="$PROJECT_DIR$/src/com/utils/UUIDUtils.java" />
         <option value="$PROJECT_DIR$/src/com/utils/MD5Utils.java" />
         <option value="$PROJECT_DIR$/src/com/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/com/dao/UserDao.java" />
@@ -214,10 +203,8 @@
         <option value="$PROJECT_DIR$/src/com/utils/BeanFactory.java" />
         <option value="$PROJECT_DIR$/src/com/domain/Comments.java" />
         <option value="$PROJECT_DIR$/src/com/domain/AnonDistrict.java" />
-        <option value="$PROJECT_DIR$/web/jsp/header.jsp" />
         <option value="$PROJECT_DIR$/src/com/utils/JsonDateValueProcessor.java" />
         <option value="$PROJECT_DIR$/web/jsp/oneAnonMap.jsp" />
-        <option value="$PROJECT_DIR$/web/css/anon.css" />
         <option value="$PROJECT_DIR$/src/com/web/servlet/AnonServlet.java" />
         <option value="$PROJECT_DIR$/src/com/dao/AnonDao.java" />
         <option value="$PROJECT_DIR$/src/com/service/AnonService.java" />
@@ -225,9 +212,25 @@
         <option value="$PROJECT_DIR$/src/com/dao/daoImp/AnonDaoImp.java" />
         <option value="$PROJECT_DIR$/web/jsp/register.jsp" />
         <option value="$PROJECT_DIR$/src/com/web/servlet/UserServlet.java" />
-        <option value="$PROJECT_DIR$/web/jsp/login.jsp" />
-        <option value="$PROJECT_DIR$/web/jsp/anonymityFriend.jsp" />
         <option value="$PROJECT_DIR$/web/js/anon.js" />
+        <option value="$PROJECT_DIR$/web/jsp/login.jsp" />
+        <option value="$PROJECT_DIR$/web/css/anon.css" />
+        <option value="$PROJECT_DIR$/web/jsp/anonymityFriend.jsp" />
+        <option value="$PROJECT_DIR$/web/css/commonGoal.css" />
+        <option value="$PROJECT_DIR$/web/jsp/commonGoal.jsp" />
+        <option value="$PROJECT_DIR$/web/jsp/upperclassmanNote.jsp" />
+        <option value="$PROJECT_DIR$/web/css/upperclassmanNote.css" />
+        <option value="$PROJECT_DIR$/web/jsp/adminUI.html" />
+        <option value="$PROJECT_DIR$/web/css/adminUI.css" />
+        <option value="$PROJECT_DIR$/web/js/adminUI.js" />
+        <option value="$PROJECT_DIR$/web/jsp/adminUI.jsp" />
+        <option value="$PROJECT_DIR$/web/adminUI/index.html" />
+        <option value="$PROJECT_DIR$/web/adminUI.html" />
+        <option value="$PROJECT_DIR$/web/adminUI/adminUI.html" />
+        <option value="$PROJECT_DIR$/web/jsp/header.jsp" />
+        <option value="$PROJECT_DIR$/web/adminUI/js/adminUI.js" />
+        <option value="$PROJECT_DIR$/web/adminUI/css/adminUI.css" />
+        <option value="$PROJECT_DIR$/web/adminUI/adminUI.jsp" />
       </list>
     </option>
   </component>
@@ -238,11 +241,15 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1947" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-80" />
+    <option name="y" value="28" />
+    <option name="width" value="1946" />
     <option name="height" value="1092" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="添加" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -258,69 +265,26 @@
             <path>
               <item name="ZJGuideWebsite" type="b2602c69:ProjectViewProjectNode" />
               <item name="ZJGuideWebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ZJGuideWebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ZJGuideWebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ZJGuideWebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ZJGuideWebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ZJGuideWebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ZJGuideWebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="daoImp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ZJGuideWebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ZJGuideWebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ZJGuideWebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ZJGuideWebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ZJGuideWebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ZJGuideWebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ZJGuideWebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ZJGuideWebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ZJGuideWebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ZJGuideWebsite" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ZJGuideWebsite" type="b2602c69:ProjectViewProjectNode" />
               <item name="ZJGuideWebsite" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="adminUI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZJGuideWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZJGuideWebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="adminUI" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZJGuideWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZJGuideWebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ZJGuideWebsite" type="b2602c69:ProjectViewProjectNode" />
@@ -332,16 +296,17 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/adminUI" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -351,25 +316,26 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="xml.catalog" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\IT\java\IDEA\ZJGuideWebsite\web\adminUI" />
+      <recent name="F:\IT\java\IDEA\ZJGuideWebsite\web" />
+      <recent name="F:\IT\java\IDEA\ZJGuideWebsite\web\image" />
+      <recent name="F:\IT\java\IDEA\ZJGuideWebsite\src\com\utils" />
+      <recent name="F:\IT\java\IDEA\ZJGuideWebsite\web\WEB-INF\lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\IT\java\IDEA\ZJGuideWebsite\web\adminUI" />
       <recent name="F:\IT\java\IDEA\ZJGuideWebsite\web\kartik-v-bootstrap-fileinput-b2e1557\js\locales" />
       <recent name="F:\IT\java\IDEA\ZJGuideWebsite\web\kartik-v-bootstrap-fileinput-b2e1557\js" />
       <recent name="F:\IT\java\IDEA\ZJGuideWebsite\web\kartik-v-bootstrap-fileinput-b2e1557\css" />
       <recent name="F:\IT\java\IDEA\ZJGuideWebsite\web\js" />
-      <recent name="F:\IT\java\IDEA\ZJGuideWebsite\web\image" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\IT\java\IDEA\ZJGuideWebsite\web\image" />
-      <recent name="F:\IT\java\IDEA\ZJGuideWebsite\src\com\utils" />
-      <recent name="F:\IT\java\IDEA\ZJGuideWebsite\web\WEB-INF\lib" />
-      <recent name="F:\IT\java\IDEA\ZJGuideWebsite\src\com\domain" />
-      <recent name="F:\IT\java\IDEA\ZJGuideWebsite\web\jsp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -508,14 +474,55 @@
         </option>
       </method>
     </configuration>
+    <configuration name="commonGoal.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 7.0.52" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:80/jsp/commonGoal.jsp" />
+      <deployment>
+        <artifact name="ZJGuideWebsite:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/ZJGuideWebsite_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="commonGoal_jsp_ZJGuideWebsite" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="ZJGuideWebsite:war exploded" />
+        </option>
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.CaptchaTest" />
       <item itemvalue="JUnit.CaptchaTest.test" />
       <item itemvalue="JUnit.CaptchaTest.testGIf" />
       <item itemvalue="Tomcat Server.Tomcat 7.0.52" />
+      <item itemvalue="Tomcat Server.commonGoal.jsp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Tomcat Server.commonGoal.jsp" />
         <item itemvalue="Application.CaptchaTest" />
         <item itemvalue="JUnit.CaptchaTest.test" />
         <item itemvalue="JUnit.CaptchaTest.testGIf" />
@@ -616,6 +623,21 @@
       <workItem from="1570179803140" duration="642000" />
       <workItem from="1572618945467" duration="1918000" />
       <workItem from="1572703190918" duration="7351000" />
+      <workItem from="1573057360055" duration="627000" />
+      <workItem from="1574952534787" duration="736000" />
+      <workItem from="1575358554179" duration="1741000" />
+      <workItem from="1575360366027" duration="1114000" />
+      <workItem from="1575426643302" duration="13992000" />
+      <workItem from="1575531519561" duration="14999000" />
+      <workItem from="1575620079386" duration="598000" />
+      <workItem from="1575704126766" duration="21472000" />
+      <workItem from="1575786400299" duration="4228000" />
+      <workItem from="1575860031504" duration="3392000" />
+      <workItem from="1575867868715" duration="443000" />
+      <workItem from="1575875282797" duration="1329000" />
+      <workItem from="1575877069685" duration="4326000" />
+      <workItem from="1575942317493" duration="17503000" />
+      <workItem from="1576048391903" duration="2309000" />
     </task>
     <servers />
   </component>
@@ -640,7 +662,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="513804000" />
+    <option name="totallyTimeSpent" value="602613000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -652,10 +674,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
-    <editor active="true" />
+    <frame x="383" y="9" width="1297" height="728" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" x="62" y="0" width="527" height="1211" id="Project" order="0" sideWeight="0.49834436" visible="true" weight="0.22392885" />
+      <window_info active="true" content_ui="combo" x="62" y="0" width="527" height="1211" id="Project" order="0" sideWeight="0.49834436" visible="true" weight="0.22679581" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -665,11 +686,11 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32781458" />
-      <window_info anchor="bottom" x="104" y="167" width="1098" height="427" id="Run" order="2" type="FLOATING" weight="0.5985267" />
+      <window_info anchor="bottom" x="77" y="141" width="1098" height="427" id="Run" order="2" type="FLOATING" weight="0.5985267" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3294702" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3283582" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32781458" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.24006623" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3294702" />
@@ -693,191 +714,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/dao/daoImp/UserDaoImp.java</url>
-          <line>68</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/web/servlet/UploadFilesServlet.java" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/locales/zh.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" column="30" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="25" selection-end-column="30" />
-          <folding>
-            <element signature="e#8#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/commons-fileupload-1.2.1.jar!/org/apache/commons/fileupload/disk/DiskFileItem.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="212" selection-start-line="212" selection-end-line="212" />
-          <folding>
-            <element signature="e#6558#6559#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/utils/CookieUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/commons-dbutils-1.4.jar!/org/apache/commons/dbutils/AbstractQueryRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="175" selection-start-line="175" selection-end-line="175" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/domain/Price.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-            <element signature="e#796#797#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/utils/JedisUtils.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/apache-tomcat-7.0.52/lib/servlet-api.jar!/javax/servlet/http/HttpServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="275" selection-start-line="275" selection-end-line="275" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/net/DualStackPlainSocketImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="282" column="22" selection-start-line="282" selection-start-column="22" selection-end-line="282" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/domain/AnonLike.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="21" />
-          <folding>
-            <element signature="e#184#185#0" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
-            <element signature="e#257#258#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/utils/BeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/domain/AnonDistrict.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/utils/UploadUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
-          <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/web/base/BaseServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jquery.cookie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/fileinput.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="12" column="12631" selection-start-line="12" selection-start-column="12623" selection-end-line="12" selection-end-column="12631" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/web/filter/EncodingFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -978,13 +815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/c3p0-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/application.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1010,13 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/anon.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="89" column="16" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dao/AnonDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="455">
@@ -1024,13 +847,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="14" selection-end-column="82" />
         </state>
       </provider>
     </entry>
@@ -1049,16 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/service/serviceImp/UserServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1096,20 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dao/daoImp/UserDaoImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dao/daoImp/AnonDaoImp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1486">
@@ -1127,33 +919,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/web/servlet/UserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1365">
-          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-756">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/web/servlet/AnonServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1191">
+        <state relative-caret-position="391">
           <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1161,66 +929,174 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/oneAnonMap.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/service/serviceImp/UserServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-787">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        <state relative-caret-position="418">
+          <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/anonymityFriend.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/wf/captcha/servlet/CaptchaServlet.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/wf/captcha/SpecCaptcha.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/wf/captcha/utils/CaptchaUtil.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/dao/daoImp/UserDaoImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="218" column="27" selection-start-line="218" selection-start-column="13" selection-end-line="218" selection-end-column="27" />
+        <state relative-caret-position="612">
+          <caret line="62" column="37" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/web/servlet/UserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/fileinput.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/image/headimg2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c3p0-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/anon.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="68" column="34" lean-forward="true" selection-start-line="63" selection-start-column="28" selection-end-line="68" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/commonGoal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-56">
+          <caret line="68" column="11" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/commonGoal.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="73" lean-forward="true" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/anon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="136" column="27" selection-start-line="136" selection-start-column="27" selection-end-line="136" selection-end-column="27" />
+        <state relative-caret-position="519">
+          <caret line="122" column="13" selection-start-line="122" selection-start-column="13" selection-end-line="122" selection-end-column="13" />
           <folding>
             <element signature="n#!!block;n#initFileInput#0" />
-            <element signature="e#802#808#0" expanded="true" />
-            <element signature="e#809#815#0" expanded="true" />
-            <element signature="e#816#822#0" expanded="true" />
             <element signature="n#!!block;n#anon_del#0" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="e#88#94#0" expanded="true" />
-            <element signature="e#94#100#0" expanded="true" />
-            <element signature="e#109#115#0" expanded="true" />
-            <element signature="e#115#121#0" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="e#91#97#0" expanded="true" />
-            <element signature="e#97#103#0" expanded="true" />
-            <element signature="e#112#118#0" expanded="true" />
-            <element signature="e#118#124#0" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="e#88#94#0" expanded="true" />
-            <element signature="e#94#100#0" expanded="true" />
-            <element signature="e#109#115#0" expanded="true" />
-            <element signature="e#115#121#0" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#443#449#0" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#2;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#749#755#0" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-            <element signature="e#62#68#1" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-            <element signature="e#62#68#1" expanded="true" />
-            <element signature="e#42#48#0" expanded="true" />
-            <element signature="e#64#70#0" expanded="true" />
-            <element signature="e#70#76#0" expanded="true" />
-            <element signature="e#160#166#0" expanded="true" />
-            <element signature="e#166#172#0" expanded="true" />
-            <element signature="e#42#48#0" expanded="true" />
-            <element signature="e#50#56#0" expanded="true" />
-            <element signature="e#73#79#0" expanded="true" />
-            <element signature="e#95#101#0" expanded="true" />
-            <element signature="e#101#107#0" expanded="true" />
-            <element signature="e#196#202#0" expanded="true" />
-            <element signature="e#202#208#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/oneAnonMap.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/layui/layui.all.js" />
+    <entry file="file://$PROJECT_DIR$/web/layui/css/layui.css" />
+    <entry file="file://$PROJECT_DIR$/web/adminUI/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/web/js/adminUI.js" />
+    <entry file="file://$PROJECT_DIR$/web/css/adminUI.css" />
+    <entry file="file://$PROJECT_DIR$/web/jsp/anonymityFriend.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="68" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/adminUI/index.html" />
+    <entry file="file://$PROJECT_DIR$/web/jsp/adminUI.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/adminUI/adminUI.html" />
+    <entry file="file://$PROJECT_DIR$/web/jsp/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="87" selection-start-line="27" selection-start-column="87" selection-end-line="27" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/upperclassmanNote.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="910">
+          <caret line="89" column="14" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/upperclassmanNote.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="82" column="26" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/adminUI/js/adminUI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" column="14" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/adminUI/css/adminUI.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/adminUI/adminUI.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="100" column="39" selection-start-line="100" selection-start-column="39" selection-end-line="100" selection-end-column="39" />
+          <folding>
+            <element signature="n#style#0;n#el-table#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1247,7 +1123,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

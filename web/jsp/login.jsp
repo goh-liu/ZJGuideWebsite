@@ -81,8 +81,10 @@
                                     <div class="input-group">
                                         <input type="text" class="form-control" name="verification-code" id="verification-code" placeholder="5位验证码">
                                         <span class="input-group-btn">
-                                            <a class="btn btn-default" href="${pageContext.request.contextPath}/jsp/login.jsp" role="button">
-                                                <img src="${pageContext.request.contextPath}/images/captcha" style="height: 20px"/></a>
+                                            <a class="btn btn-default" href="${pageContext.request.contextPath}/jsp/login.jsp"
+                                               role="button" style="padding: 1px 10px">
+                                                <img src="${pageContext.request.contextPath}/images/captcha"
+                                                     style="height: 30px;width: 80px;"/></a>
                                         </span>
                                     </div>
                                 </div>

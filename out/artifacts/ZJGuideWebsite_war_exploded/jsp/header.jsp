@@ -25,24 +25,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="${pageContext.request.contextPath}/index.jsp">首页<span class="sr-only">(current)</span></a></li>
-                    <li><a href="${pageContext.request.contextPath}/AnonServlet?method=showAnon">生存攻略</a></li>
-                    <li><a href="#">学长寄语</a></li>
-                    <li><a href="#">志同道合</a></li>
+                    <li><a href="${pageContext.request.contextPath}/adminUI/adminUI.jsp">管理后台<span class="sr-only">(current)</span></a></li>
+                    <li><a href="${pageContext.request.contextPath}/jsp/upperclassmanNote.jsp">学长寄语</a></li>
+                    <li><a href="${pageContext.request.contextPath}/jsp/commonGoal.jsp">志同道合</a></li>
                     <li><a href="${pageContext.request.contextPath}/AnonServlet?method=anonUI">匿名友人</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">社团组织<span class="caret"></span></a>
-                        <ul class="dropdown-menu"  style="min-width: 96px;width: 96px">
-                            <li><a href="#">我的社团</a></li>
-                            <li><a href="#">管理后台</a></li>
-                            <!--下行是分割线-->
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">社团简介</a></li>
-                            <li><a href="#">加入社团</a></li>
-
-                        </ul>
-                    </li>
-
                 </ul>
                 <form class="navbar-form navbar-left">
                     <div class="form-group">
