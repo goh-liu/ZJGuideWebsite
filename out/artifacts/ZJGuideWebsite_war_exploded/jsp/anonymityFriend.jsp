@@ -14,7 +14,7 @@
     <script src="${pageContext.request.contextPath}/js/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
     <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
-    <script src="js/jquery.cookie.js"></script>
+    <script src="${pageContext.request.contextPath}/js/jquery.cookie.js"></script>
     <!-- Bootstrap文件上传 -->
     <script src="${pageContext.request.contextPath}/js/fileinput.min.js"></script>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/fileinput.min.css">
@@ -163,7 +163,7 @@
                                 <div>${ac.anonContent}</div>
                                 <div>
                                     <!--遍历图片集合-->
-                                    <c:forEach items="${page.map.get('priceList')}" var="p">
+                                    <c:forEach items="${page.map.get('anonPriceList')}" var="p">
                                         <!--判断是否是该条的图片-->
                                         <c:if test="${p.anonID == ac.anonID}">
                                             <img src="imgUrl/${p.priceUrl}" class="headImg">

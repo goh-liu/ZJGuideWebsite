@@ -21,7 +21,7 @@ public class AnonServiceImp implements AnonService {
      * @throws Exception
      */
     @Override
-    public void anonWrite(AnonDistrict anon, List<Price> list) throws Exception {
+    public void anonWrite(AnonDistrict anon, List<AnonPrice> list) throws Exception {
         AnonDao anonDao = (AnonDao)BeanFactory.createObject("AnonDao");
         anonDao.anonWrite(anon,list);
     }
@@ -42,8 +42,8 @@ public class AnonServiceImp implements AnonService {
         HashMap anonMap = anonDao.showAnonWithPage(pm.getStartIndex(), pm.getPageSize());
         pm.setMap(anonMap);
 
-        //3_关联url
-        pm.setUrl("AnonServlet?method=showAnonWithPage");
+        //3_关联url,后面的&是为了连接页码
+        pm.setUrl("AnonServlet?method=showAnonWithPage&");
         return pm;
     }
 
@@ -148,7 +148,7 @@ public class AnonServiceImp implements AnonService {
      * @throws Exception
      */
     @Override
-    public List<Comments> showUserComment(String uid) throws Exception {
+    public List<AnonComments> showUserComment(String uid) throws Exception {
         AnonDao anonDao = (AnonDao)BeanFactory.createObject("AnonDao");
         return anonDao.showUserComment(uid);
     }
@@ -160,7 +160,7 @@ public class AnonServiceImp implements AnonService {
      * @throws Exception
      */
     @Override
-    public List<Comments> showMessages(String uid) throws Exception {
+    public List<AnonComments> showMessages(String uid) throws Exception {
         AnonDao anonDao = (AnonDao)BeanFactory.createObject("AnonDao");
         return anonDao.showMessages(uid);
     }

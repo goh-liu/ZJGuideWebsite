@@ -41,8 +41,8 @@ public class AnonServlet extends BaseServlet {
     //用户点击发表按钮
     public String anonWrite(HttpServletRequest req, HttpServletResponse resp) throws Exception {
         AnonDistrict anonDistrict = null;
-        Price price = null;
-        ArrayList<Price> prices = new ArrayList<>();
+        AnonPrice anonPrice = null;
+        ArrayList<AnonPrice> anonPrices = new ArrayList<>();
         User user = (User) req.getSession().getAttribute("loginUser");
         DiskFileItemFactory diskFileItemFactory = new DiskFileItemFactory();
         ServletFileUpload upload = new ServletFileUpload(diskFileItemFactory);
@@ -93,15 +93,15 @@ public class AnonServlet extends BaseServlet {
                 //图片的路径
                 String priceUrl = dir+"/"+newFileName;
                 //将数据封装在price对象中
-                price = new Price();
-                price.setAnonID(anonDistrict.getAnonID());
-                price.setPriceUrl(priceUrl);
-                price.setStatus(1);
-                prices.add(price);
+                anonPrice = new AnonPrice();
+                anonPrice.setAnonID(anonDistrict.getAnonID());
+                anonPrice.setPriceUrl(priceUrl);
+                anonPrice.setStatus(1);
+                anonPrices.add(anonPrice);
             }
         }
         AnonService anonService = new AnonServiceImp();
-        anonService.anonWrite(anonDistrict,prices);
+        anonService.anonWrite(anonDistrict, anonPrices);
         resp.setContentType("text/html; charset=UTF-8"); //转码
         resp.getWriter().print("<script>alert('发表成功！点击《已发表》可查看');" +
                 "window.location.href='/ZJGuideWebsite_war_exploded/AnonServlet?method=anonUI';</script>");
@@ -185,7 +185,7 @@ public class AnonServlet extends BaseServlet {
     public String showMessages(HttpServletRequest req, HttpServletResponse resp) throws Exception {
         User user = (User) req.getSession().getAttribute("loginUser");
         AnonService anonService = new AnonServiceImp();
-        List<Comments>  userMessages = anonService.showMessages(user.getUid());
+        List<AnonComments>  userMessages = anonService.showMessages(user.getUid());
         //将Date格式转化为yyyy-MM-dd HH:mm:ss格式
         JsonConfig jsonConfig = new JsonConfig();
         jsonConfig.registerJsonValueProcessor(Date.class , new JsonDateValueProcessor());
@@ -213,7 +213,7 @@ public class AnonServlet extends BaseServlet {
     public String showUserComment(HttpServletRequest req, HttpServletResponse resp) throws Exception {
         User user = (User) req.getSession().getAttribute("loginUser");
         AnonService anonService = new AnonServiceImp();
-        List<Comments> userCommentList = anonService.showUserComment(user.getUid());
+        List<AnonComments> userCommentList = anonService.showUserComment(user.getUid());
         //将Date格式转化为yyyy-MM-dd HH:mm:ss格式
         JsonConfig jsonConfig = new JsonConfig();
         jsonConfig.registerJsonValueProcessor(Date.class , new JsonDateValueProcessor());

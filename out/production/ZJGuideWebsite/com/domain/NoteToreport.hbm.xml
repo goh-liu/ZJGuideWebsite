@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <!-- 建立类与表的映射 -->
+    <class name="com.domain.NoteToreport" table="note_toreport">
+        <!-- 建立类中的属性与表中的主键对应 -->
+        <id name="toreportId" column="toreportId" >
+            <!-- 主键生成策略 -->
+            <generator class="assigned"/>
+        </id>
+
+        <!-- 建立类中的普通的属性和表的字段的对应 -->
+        <property name="noteId" column="noteId" />
+        <property name="uid" column="uid"  />
+        <property name="toreportText" column="toreportText"/>
+        <property name="toreportTime" column="toreportTime"/>
+        <property name="isRead" column="isRead"/>
+
+    </class>
+
+</hibernate-mapping>

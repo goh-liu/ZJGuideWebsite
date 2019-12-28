@@ -26,23 +26,23 @@ public class AnonDaoImp implements AnonDao {
      * @throws Exception
      */
     @Override
-    public void anonWrite(AnonDistrict anon, List<Price> list) throws Exception {
+    public void anonWrite(AnonDistrict anon, List<AnonPrice> list) throws Exception {
         String sql1 = "insert into anon_district(anonID,uid,anonContent,deliveryTime,status) values(?,?,?,?,?)";
         QueryRunner queryRunner = new QueryRunner(JDBCUtils.getDataSource());
         Object[] params1 = {anon.getAnonID(),anon.getUid(),anon.getAnonContent(),
                 anon.getDeliveryTime(),anon.getStatus()};
         queryRunner.update(sql1,params1);
         if (!(list.isEmpty())){//判断是否有上传图片
-            String sql2 = "insert into price values(?,?,?)";
-            for (Price price : list) {
-                Object[] params2 = {price.getAnonID(),price.getPriceUrl(),anon.getStatus()};
+            String sql2 = "insert into anon_price values(?,?,?)";
+            for (AnonPrice anonPrice : list) {
+                Object[] params2 = {anonPrice.getAnonID(), anonPrice.getPriceUrl(),anon.getStatus()};
                 queryRunner.update(sql2,params2);
             }
         }
     }
 
     /**
-     * 统计当前有多少条匿名说说
+     * 计算当前有多少条匿名说说
      * @return
      * @throws Exception
      */
@@ -81,18 +81,18 @@ public class AnonDaoImp implements AnonDao {
             }
         }
         //根据匿名说说ID遍历出这些匿名说说的图片，
-        String sql2="select * from price where anonID in("+anonIDList+")";
-        List<Price> priceList = qr.query(sql2, new BeanListHandler<Price>(Price.class));
+        String sql2="select * from anon_price where anonID in("+anonIDList+")";
+        List<AnonPrice> anonPriceList = qr.query(sql2, new BeanListHandler<AnonPrice>(AnonPrice.class));
         //根据匿名说说ID查找出其评论
-        String sql3 = "select * from comments where anonID in("+anonIDList+")";
-        List<Comments> commentsList = qr.query(sql3, new BeanListHandler<Comments>(Comments.class));
+        String sql3 = "select * from anon_comments where anonID in("+anonIDList+")";
+        List<AnonComments> anonCommentsList = qr.query(sql3, new BeanListHandler<AnonComments>(AnonComments.class));
         //根据匿名说说ID查找出点赞情况
         String sql4 = "select * from anon_like where anonID in("+anonIDList+")";
         List<AnonLike> likeList = qr.query(sql4, new BeanListHandler<AnonLike>(AnonLike.class));
         //将匿名说说及其图片、评论存放在map中
         anonMap.put("anonCommentList",list1);
-        anonMap.put("priceList",priceList);
-        anonMap.put("commentList",commentsList);
+        anonMap.put("anonPriceList", anonPriceList);
+        anonMap.put("commentList", anonCommentsList);
         anonMap.put("likeList",likeList);
 
         return anonMap;
@@ -116,32 +116,32 @@ public class AnonDaoImp implements AnonDao {
         if ("anonUID".equals(comment_destUid)){
             comment_destUid = anonDistrict.getUid();
         }
-        //写进comments表中
-        String sql = "insert into comments values(?,?,?,?,?,?,?,?,?)";
+        //写进anon_comments表中
+        String sql = "insert into anon_comments values(?,?,?,?,?,?,?,?,?)";
         if ("2".equals(commentOrReply)){
 
             if(user.getUid().equals(anonDistrict.getUid())){
                 //匿名者回复自己
                 Object[] params = {anonDistrict.getAnonID(),user.getUid(),comment_destUname,
                         user.getUid(),comment_destUname,anonComment,new Date(),2,0};
-                //将该回复写进comments表中------>回复
+                //将该回复写进anon_comments表中------>回复
                 queryRunner.update(sql,params);
             }else{
                 Object[] params = {anonDistrict.getAnonID(),user.getUid(),user.getUname(),
                         comment_destUid,comment_destUname,anonComment,new Date(),2,0};
-                //将该回复写进comments表中------>回复
+                //将该回复写进anon_comments表中------>回复
                 queryRunner.update(sql,params);
             }
 
         }else{
             if(user.getUid().equals(anonDistrict.getUid())) {
                 //匿名者评论自己
-                //将该评论写进comments表中------>评论
+                //将该评论写进anon_comments表中------>评论
                 Object[] params = {anonDistrict.getAnonID(),user.getUid(),comment_destUname,
                         user.getUid(),comment_destUname,anonComment,new Date(),1,0};
                 queryRunner.update(sql,params);
             }else{
-                //将该评论写进comments表中------>评论
+                //将该评论写进anon_comments表中------>评论
                 Object[] params = {anonDistrict.getAnonID(),user.getUid(),user.getUname(),
                         comment_destUid,comment_destUname,anonComment,new Date(),1,0};
                 queryRunner.update(sql,params);
@@ -268,18 +268,18 @@ public class AnonDaoImp implements AnonDao {
         }
         AnonDistrict anon = queryRunner.query(sql,new BeanHandler<AnonDistrict>(AnonDistrict.class), counter);
         //根据匿名说说ID遍历出这些匿名说说的图片，
-        String sql2="select * from price where anonID = ?";
-        List<Price> priceList = queryRunner.query(sql2, new BeanListHandler<Price>(Price.class),anon.getAnonID());
+        String sql2="select * from anon_price where anonID = ?";
+        List<AnonPrice> anonPriceList = queryRunner.query(sql2, new BeanListHandler<AnonPrice>(AnonPrice.class),anon.getAnonID());
         //根据匿名说说ID查找出其评论
-        String sql3 = "select * from comments where anonID = ?";
-        List<Comments> commentsList = queryRunner.query(sql3, new BeanListHandler<Comments>(Comments.class),anon.getAnonID());
+        String sql3 = "select * from anon_comments where anonID = ?";
+        List<AnonComments> anonCommentsList = queryRunner.query(sql3, new BeanListHandler<AnonComments>(AnonComments.class),anon.getAnonID());
         //根据匿名说说ID查找出点赞情况
         String sql4 = "select * from anon_like where anonID = ?";
         List<AnonLike> likeList = queryRunner.query(sql4, new BeanListHandler<AnonLike>(AnonLike.class),anon.getAnonID());
         //将匿名说说及其图片、评论存放在map中
         anonMap.put("anonDistrict",anon);
-        anonMap.put("priceList",priceList);
-        anonMap.put("commentList",commentsList);
+        anonMap.put("anonPriceList", anonPriceList);
+        anonMap.put("commentList", anonCommentsList);
         anonMap.put("likeList",likeList);
 
         return anonMap;
@@ -292,10 +292,10 @@ public class AnonDaoImp implements AnonDao {
      * @throws Exception
      */
     @Override
-    public List<Comments> showUserComment(String uid) throws Exception {
+    public List<AnonComments> showUserComment(String uid) throws Exception {
         QueryRunner queryRunner = new QueryRunner(JDBCUtils.getDataSource());
-        String sql = "select * from comments where sourceUid = ? order by commentTime desc";
-        List<Comments> usercommentlist = queryRunner.query(sql, new BeanListHandler<Comments>(Comments.class), uid);
+        String sql = "select * from anon_comments where sourceUid = ? order by commentTime desc";
+        List<AnonComments> usercommentlist = queryRunner.query(sql, new BeanListHandler<AnonComments>(AnonComments.class), uid);
         return usercommentlist;
     }
 
@@ -306,10 +306,10 @@ public class AnonDaoImp implements AnonDao {
      * @throws Exception
      */
     @Override
-    public List<Comments> showMessages(String uid) throws Exception {
+    public List<AnonComments> showMessages(String uid) throws Exception {
         QueryRunner queryRunner = new QueryRunner(JDBCUtils.getDataSource());
-        String sql = "select * from comments where destUid = ? and isRead = 0 order by commentTime desc";
-        List<Comments> userMessages = queryRunner.query(sql, new BeanListHandler<Comments>(Comments.class), uid);
+        String sql = "select * from anon_comments where destUid = ? and isRead = 0 order by commentTime desc";
+        List<AnonComments> userMessages = queryRunner.query(sql, new BeanListHandler<AnonComments>(AnonComments.class), uid);
         return userMessages;
     }
 
@@ -322,7 +322,7 @@ public class AnonDaoImp implements AnonDao {
     @Override
     public void readMessage(String anonID,String destUid) throws Exception {
         QueryRunner queryRunner = new QueryRunner(JDBCUtils.getDataSource());
-        String sql = "update comments set isRead = 1  where anonID = ? and destUid = ? and isRead = 0";
+        String sql = "update anon_comments set isRead = 1  where anonID = ? and destUid = ? and isRead = 0";
         queryRunner.update(sql,anonID,destUid);
     }
 

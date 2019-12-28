@@ -4,8 +4,10 @@
   Date: 2019/9/1
   Time: 11:35
   To change this template use File | Settings | File Templates.
+  该文件是一条匿名说说的详细信息
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!--单个用户-->
 <div class="anonymityItem row">
     <!--用户头像-->
@@ -46,7 +48,7 @@
             <div>${oneAnonMap.get('anonDistrict').anonContent}</div>
             <div>
                 <!--遍历图片集合-->
-                <c:forEach items="${oneAnonMap.get('priceList')}" var="p">
+                <c:forEach items="${oneAnonMap.get('anonPriceList')}" var="p">
                     <!--判断是否是该条的图片-->
                     <c:if test="${p.anonID == oneAnonMap.get('anonDistrict').anonID}">
                         <img src="imgUrl/${p.priceUrl}" class="headImg">

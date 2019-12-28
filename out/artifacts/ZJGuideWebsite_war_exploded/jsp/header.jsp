@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="${pageContext.request.contextPath}/adminUI/adminUI.jsp">管理后台<span class="sr-only">(current)</span></a></li>
-                    <li><a href="${pageContext.request.contextPath}/jsp/upperclassmanNote.jsp">学长寄语</a></li>
+                    <li><a href="${pageContext.request.contextPath}/note_noteUINew.action" >学长寄语</a></li>
                     <li><a href="${pageContext.request.contextPath}/jsp/commonGoal.jsp">志同道合</a></li>
                     <li><a href="${pageContext.request.contextPath}/AnonServlet?method=anonUI">匿名友人</a></li>
                 </ul>

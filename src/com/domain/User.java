@@ -1,5 +1,8 @@
 package com.domain;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * @autor goh_liu
  * @date 2019/7/31 - 8:32
@@ -15,6 +18,7 @@ public class User {
     private int ugrade;//学生年级
     private String uclass;//学生班级
     private int state;//账号状态
+
 
     @Override
     public String toString() {

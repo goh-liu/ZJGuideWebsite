@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <!-- 建立类与表的映射 -->
+    <class name="com.domain.User" table="user" lazy="true">
+        <!-- 建立类中的属性与表中的主键对应 -->
+        <id name="uid" column="uid" >
+            <!-- 主键生成策略 -->
+            <generator class="uuid"/>
+        </id>
+
+        <!-- 建立类中的普通的属性和表的字段的对应 -->
+        <property name="uname" column="uname"  />
+        <property name="upassword" column="upassword" />
+        <property name="sex" column="sex"/>
+        <property name="telephone" column="telephone"/>
+        <property name="school" column="school"/>
+        <property name="secondarySchool" column="secondarySchool"/>
+        <property name="ugrade" column="ugrade"/>
+        <property name="uclass" column="uclass"/>
+        <property name="state" column="status"/>
+
+    </class>
+
+</hibernate-mapping>

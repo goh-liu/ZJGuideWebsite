@@ -16,7 +16,7 @@ public interface AnonService {
      * @param list
      * @throws Exception
      */
-    void anonWrite(AnonDistrict anon, List<Price> list) throws Exception;
+    void anonWrite(AnonDistrict anon, List<AnonPrice> list) throws Exception;
 
     /**
      * 分页查看匿名说说
@@ -93,7 +93,7 @@ public interface AnonService {
      * @return 返回该用户所评论过内容
      * @throws Exception
      */
-    List<Comments> showUserComment(String uid) throws Exception;
+    List<AnonComments> showUserComment(String uid) throws Exception;
 
     /**
      * 查看用户消息
@@ -101,7 +101,7 @@ public interface AnonService {
      * @return 返回该用户的消息
      * @throws Exception
      */
-    List<Comments> showMessages(String uid) throws Exception;
+    List<AnonComments> showMessages(String uid) throws Exception;
 
     /**
      * 查看消息后将将消息设置为已读
