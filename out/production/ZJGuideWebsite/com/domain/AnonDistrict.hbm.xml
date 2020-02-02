@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping >
+    <class name="com.domain.AnonDistrict" table="anon_district">
+        <id name="anonID">
+            <generator class="assigned"/>
+        </id>
+        <property name="counter"/>
+        <property name="uid"/>
+        <property name="anonContent"/>
+        <property name="deliveryTime"/>
+        <property name="likeCoun"/>
+        <property name="status"/>
+    </class>
+</hibernate-mapping>

@@ -7,6 +7,7 @@ import java.util.Date;
  * @date 2019/8/9 - 15:27
  */
 public class AnonComments {
+    private String counter;
     private String anonID;
     private String sourceUid;
     private String sourceUname;
@@ -18,6 +19,14 @@ public class AnonComments {
     private int isread;
 
     public AnonComments() {
+    }
+
+    public String getCounter() {
+        return counter;
+    }
+
+    public void setCounter(String counter) {
+        this.counter = counter;
     }
 
     public String getAnonID() {
@@ -95,7 +104,8 @@ public class AnonComments {
     @Override
     public String toString() {
         return "AnonComments{" +
-                "anonID='" + anonID + '\'' +
+                "counter='" + counter + '\'' +
+                ", anonID='" + anonID + '\'' +
                 ", sourceUid='" + sourceUid + '\'' +
                 ", sourceUname='" + sourceUname + '\'' +
                 ", destUid='" + destUid + '\'' +

@@ -37,6 +37,10 @@
     padding-top: 10px;
 
 }
+.myTeam,.myMessages{
+    height: 420px;
+    overflow: auto;
+}
 #publish h3{
     display: inline;
 }
@@ -61,7 +65,7 @@
     margin-bottom: 0px;
     position: fixed;
     line-height: 63px;
-    z-index: 9999;
+    z-index: 999;
 }
 .body_right .TroopsType>div:first-child{
     float: left;

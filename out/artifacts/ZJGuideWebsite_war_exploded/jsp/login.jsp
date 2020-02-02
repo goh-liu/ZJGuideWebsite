@@ -53,13 +53,13 @@
                     <h2 class="modal-title" style="display: inline;">欢迎登陆</h2>
                     <div class="header01 col-md-offset-3" style="display: inline;">
                         &ensp;&ensp;没有账号?
-                        <a href="${pageContext.request.contextPath}/UserServlet?method=registerUI">点此注册</a>
+                        <a href="${pageContext.request.contextPath}/user_registerUI.action">点此注册</a>
                     </div>
                 </div>
                 <div class="modal-body">
                     <div class="container">
                         <form class="form-horizontal" id="loginForm"
-                              action="${pageContext.request.contextPath}/UserServlet?method=userLogin" method="post">
+                              action="${pageContext.request.contextPath}/user_userLogin.action" method="post">
                             <!--用户名-->
                             <div class="form-group">
                                 <label for="uname" class="col-sm-1 control-label">用户名：</label>
@@ -79,9 +79,9 @@
                                 <label for="verification-code" class="col-sm-1 control-label">验证码：</label>
                                 <div class="col-sm-3">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" name="verification-code" id="verification-code" placeholder="5位验证码">
+                                        <input type="text" class="form-control" name="verification-code" id="verification-code" placeholder="4位验证码">
                                         <span class="input-group-btn">
-                                            <a class="btn btn-default" href="${pageContext.request.contextPath}/jsp/login.jsp"
+                                            <a class="btn btn-default" href="${pageContext.request.contextPath}/user_loginUI.action"
                                                role="button" style="padding: 1px 10px">
                                                 <img src="${pageContext.request.contextPath}/images/captcha"
                                                      style="height: 30px;width: 80px;"/></a>
@@ -121,7 +121,7 @@
                 <div class="modal-body">
                     <div class="container">
                         <form class="form-horizontal" method="post" id="findpassword"
-                              action="${pageContext.request.contextPath}/UserServlet?method=findpassword">
+                              action="${pageContext.request.contextPath}/user_findpassword.action">
                             <!--手机号码-->
                             <div class="form-group">
                                 <label for="telephone" class="col-sm-2 control-label">手机号码：</label>
@@ -136,7 +136,7 @@
                                     <div class="input-group">
                                         <input type="text" name="telephoneCode" class="form-control" id="telephoneCode" placeholder="验证码">
                                         <span class="input-group-btn">
-                                             <a class="btn btn-default" href="#" role="button">获取验证码</a>
+                                            <a class="btn btn-default" id="veri_buton" href="#" onclick="verificationCode()" role="button">获取验证码</a>
                                         </span>
                                     </div>
                                 </div>
@@ -167,5 +167,42 @@
     </div>
 </body>
 </html>
+<script>
+    //弹窗，显示action返回的信息
+    let popupMessage=""+'${popupMessage}';
+    if (popupMessage != ""){
+        alert(popupMessage);
+        <%session.setAttribute("popupMessage","");%>
+    }
 
+    //找回密码中的获取验证码
+    function verificationCode() {
+        let telephone = $('#telephone').val();
+        if (telephone == ""){
+            alert("请先输入手机号码");
+        }else {
+            $.post("/ZJGuideWebsite_war_exploded/user_verificationCode_JSON.action",{telephone:telephone},function (data,status) {
+                veri_butonTime();
+                alert(data);
+            });
+        }
+
+    }
+    let wait = 59;
+    function veri_butonTime() {
+        if (wait == 0) {
+            $('#veri_buton').attr("disabled",false);
+            $('#veri_buton').html("获取验证码");
+            wait = 59;
+        } else {
+            $('#veri_buton').attr("disabled", true);
+            $('#veri_buton').html("重新发送(" + wait + ")");
+            wait--;
+            setTimeout(function () {
+                    veri_butonTime()
+                },
+                1000)
+        }
+    }
+</script>
 

@@ -2,19 +2,52 @@ package com.service.serviceImp;
 
 import com.dao.UserDao;
 import com.domain.User;
+import com.domain.UserIdAndName;
 import com.service.UserService;
 import com.utils.BeanFactory;
+import com.utils.JeditUtils;
+import org.hibernate.annotations.Source;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import redis.clients.jedis.Jedis;
+
+import javax.annotation.Resource;
 
 /**
  * @autor goh_liu
  * @date 2019/7/30 - 23:36
  */
+@Service("userService")
+@Transactional
 public class UserServiceImp implements UserService {
 
+    @Resource(name = "userDao")
+    private UserDao userDao;
 
+    /**
+     * 注册用户
+     * @param user
+     * @throws Exception
+     */
+    @Override
+    public void userRegister(User user) throws Exception {
+        userDao.userRegister(user);
+        //将该新用户的用户ID和用户名存放在redis数据库中
+        Jedis jedis = JeditUtils.getJedis();
+        jedis.set(user.getUid(),user.getUname());
+        JeditUtils.closeJedis(jedis);
+    }
+
+    /**
+     * 用户登录
+     * @param uname
+     * @param upassword
+     * @return
+     * @throws Exception
+     */
     @Override
     public User userLogin(String uname, String upassword) throws Exception {
-        UserDao userDao = (UserDao) BeanFactory.createObject("UserDao");
         User user = userDao.userLogin(uname, upassword);
         if(null == user){
             throw new RuntimeException("用户名/密码错误,请重新登录");
@@ -23,30 +56,49 @@ public class UserServiceImp implements UserService {
         }
     }
 
+    /**
+     * 自动登陆
+     * @param uid
+     * @return
+     * @throws Exception
+     */
     @Override
     public User autoLogin(String uid) throws Exception {
-        UserDao userDao = (UserDao) BeanFactory.createObject("UserDao");
         return userDao.findUserByID(uid);
-
-    }
-    //用户注册
-    @Override
-    public void userRegister(User user) throws Exception {
-        UserDao userDao = (UserDao) BeanFactory.createObject("UserDao");
-        userDao.userRegister(user);
     }
 
-    //查询用户已经注册过，或者重名
+    /**
+     * 查看注册时手机号码和用户名是否存在
+     * @param uname
+     * @param telephone
+     * @return
+     * @throws Exception
+     */
     @Override
     public String findUserbyNameOrTele(String uname, String telephone) throws Exception {
-        UserDao userDao = (UserDao) BeanFactory.createObject("UserDao");
         return userDao.findUserbyNameOrTele(uname,telephone);
     }
 
-    //找回密码
+    /**
+     * 找回密码
+     * @param telephone
+     * @param newpassword
+     * @throws Exception
+     */
     @Override
     public void findpassword(String telephone,String newpassword) throws Exception {
-        UserDao userDao = (UserDao) BeanFactory.createObject("UserDao");
         userDao.findpassword(telephone,newpassword);
+    }
+
+    /**
+     * 登陆管理后台
+     * @param uname
+     * @param upassword
+     * @throws Exception
+     */
+    @Override
+    public UserIdAndName adminLogin(String uname, String upassword) throws Exception {
+        return userDao.adminLogin(uname, upassword);
+
     }
 }

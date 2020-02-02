@@ -1,6 +1,7 @@
 package com.service;
 
 import com.domain.User;
+import com.domain.UserIdAndName;
 
 /**
  * @autor goh_liu
@@ -17,4 +18,6 @@ public interface UserService {
     String findUserbyNameOrTele(String uname,String telephone) throws Exception;
 
     void findpassword(String telephone,String newpassword) throws Exception;
+
+    UserIdAndName adminLogin(String uname, String upassword) throws Exception;
 }

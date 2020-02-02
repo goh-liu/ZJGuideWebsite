@@ -5,10 +5,19 @@ package com.domain;
  * @date 2019/8/11 - 22:20
  */
 public class AnonLike {
+    private String counter;
     private String anonID;
     private String likeUID;
 
     public AnonLike() {
+    }
+
+    public String getCounter() {
+        return counter;
+    }
+
+    public void setCounter(String counter) {
+        this.counter = counter;
     }
 
     public String getAnonID() {
@@ -30,7 +39,8 @@ public class AnonLike {
     @Override
     public String toString() {
         return "AnonLike{" +
-                "anonID='" + anonID + '\'' +
+                "counter='" + counter + '\'' +
+                ", anonID='" + anonID + '\'' +
                 ", likeUID='" + likeUID + '\'' +
                 '}';
     }

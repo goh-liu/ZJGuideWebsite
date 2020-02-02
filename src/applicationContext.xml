@@ -2,15 +2,12 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:aop="http://www.springframework.org/schema/aop"
 	xmlns:tx="http://www.springframework.org/schema/tx"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
 	http://www.springframework.org/schema/beans/spring-beans.xsd
 	http://www.springframework.org/schema/context
 	http://www.springframework.org/schema/context/spring-context.xsd
-	http://www.springframework.org/schema/aop
-	http://www.springframework.org/schema/aop/spring-aop.xsd
-	http://www.springframework.org/schema/tx 
+	http://www.springframework.org/schema/tx
 	http://www.springframework.org/schema/tx/spring-tx.xsd">
 	
 	<!-- 引入外部属性文件=============================== -->
@@ -42,12 +39,20 @@
 		<!-- 设置映射文件 -->
 		<property name="mappingResources">
 			<list>
+				<value>com/domain/AnonDistrict.hbm.xml</value>
+				<value>com/domain/AnonComments.hbm.xml</value>
+				<value>com/domain/AnonLike.hbm.xml</value>
+				<value>com/domain/AnonPrice.hbm.xml</value>
 				<value>com/domain/NoteDistrict.hbm.xml</value>
 				<value>com/domain/User.hbm.xml</value>
 				<value>com/domain/NoteUseful.hbm.xml</value>
 				<value>com/domain/NoteObjection.hbm.xml</value>
 				<value>com/domain/NoteToreport.hbm.xml</value>
 				<value>com/domain/UserIdAndName.hbm.xml</value>
+				<value>com/domain/TeamDistrict.hbm.xml</value>
+				<value>com/domain/teamMenber.hbm.xml</value>
+				<value>com/domain/TeamToreport.hbm.xml</value>
+				<value>com/domain/TeamIdAndName.hbm.xml</value>
 			</list>
 		</property>
 	</bean>
@@ -56,17 +61,38 @@
 	<bean id="noteAction" class="com.web.action.NoteAction" scope="prototype" >
 		<property name="noteService" ref="noteService"/>
 	</bean>
-	
+	<bean id="teamAction" class="com.web.action.TeamAction" scope="prototype" >
+		<property name="teamService" ref="teamService"/>
+	</bean>
+	<bean id="adminAction" class="com.web.action.AdminAction" scope="prototype" >
+		<property name="adminService" ref="AdminService"/>
+	</bean>
+
 	<!-- 配置Service================== -->
 	<bean id="noteService" class="com.service.serviceImp.NoteServiceImpl">
 		<property name="noteDao" ref="noteDao"/>
 	</bean>
-	
+	<bean id="teamService" class="com.service.serviceImp.TeamServiceImp">
+		<property name="teamDao" ref="teamDao"/>
+	</bean>
+	<bean id="AdminService" class="com.service.serviceImp.AdminServiceImp">
+		<property name="adminDao" ref="adminDao"/>
+	</bean>
+
 	<!-- 配置DAO====================== -->
 	<bean id="noteDao" class="com.dao.daoImp.NoteDaoImpl">
 		<property name="sessionFactory" ref="sessionFactory"/>
 	</bean>
-	
+	<bean id="teamDao" class="com.dao.daoImp.TeamDaoImp">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	<bean id="adminDao" class="com.dao.daoImp.AdminDaoImp">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	<bean id="userDao" class="com.dao.daoImp.UserDaoImp">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+
 	<!-- 配置事务管理器 -->
 	<bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
 		<property name="sessionFactory" ref="sessionFactory"/>
@@ -74,4 +100,7 @@
 	
 	<!-- 开启注解事务 -->
 	<tx:annotation-driven transaction-manager="transactionManager"/>
+	<context:component-scan base-package="com.web.action"/>
+	<context:component-scan base-package="com.service"/>
+	<context:component-scan base-package="com.dao"/>
 </beans>

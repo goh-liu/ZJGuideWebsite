@@ -63,3 +63,12 @@
     background: #E4E7ED;
 }
 
+.indexpanel{
+    width: 83%;
+    height: 518px;
+    position: absolute;
+    top: 91px;
+    left: 208px;
+    background: #E4E7ED;
+    z-index: 99999;
+}

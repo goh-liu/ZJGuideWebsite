@@ -1,6 +1,5 @@
 package com.domain;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -25,6 +24,7 @@ public class PageModel {
         private List<String> ClickMarkList1;//存放本页面中“有用”的情况
         private List<String> ClickMarkList2;//存放本页面中“提出异议”的情况
         private List<String> ClickMarkList3;//存放本页面中“举报”的情况
+
 
         //扩展属性
         //一共每页显示9个页码按钮
@@ -194,4 +194,5 @@ public class PageModel {
         public void setClickMarkList3(List<String> clickMarkList3) {
             ClickMarkList3 = clickMarkList3;
         }
+
 }

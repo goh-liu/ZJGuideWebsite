@@ -61,7 +61,7 @@ public class UserServlet extends BaseServlet {
         user.setUid(UUIDUtils.getId());
         //对密码进行加密处理
         user.setUpassword(MD5Utils.md5(user.getUpassword()));
-        user.setState(1);//1代表用户状态是正常的
+        user.setStatus(1);//1代表用户状态是正常的
         try {
             //调用service层处理
             userService.userRegister(user);

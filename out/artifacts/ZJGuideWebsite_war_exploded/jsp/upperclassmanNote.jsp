@@ -204,7 +204,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                    <button type="submit" class="btn btn-primary" form="toreportForm">提出</button>
+                    <button type="submit" class="btn btn-primary" form="toreportForm">举报</button>
                 </div>
             </div>
         </div>

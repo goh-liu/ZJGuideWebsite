@@ -13,12 +13,17 @@ public class User {
     private String upassword;
     private String sex;
     private String telephone;
-    private String school;//学生所在学校
-    private String secondarySchool;//学生所在学院
-    private int ugrade;//学生年级
-    private String uclass;//学生班级
-    private int state;//账号状态
-
+    private String telephoneCode;
+    //学生所在学校
+    private String school;
+    //学生所在学院
+    private String secondarySchool;
+    //学生年级
+    private int ugrade;
+    //学生班级
+    private String uclass;
+    //账号状态
+    private int status;
 
     @Override
     public String toString() {
@@ -28,11 +33,12 @@ public class User {
                 ", upassword='" + upassword + '\'' +
                 ", sex='" + sex + '\'' +
                 ", telephone='" + telephone + '\'' +
+                ", telephoneCode='" + telephoneCode + '\'' +
                 ", school='" + school + '\'' +
                 ", secondarySchool='" + secondarySchool + '\'' +
                 ", ugrade=" + ugrade +
                 ", uclass='" + uclass + '\'' +
-                ", state=" + state +
+                ", status=" + status +
                 '}';
     }
 
@@ -76,6 +82,14 @@ public class User {
         this.telephone = telephone;
     }
 
+    public String getTelephoneCode() {
+        return telephoneCode;
+    }
+
+    public void setTelephoneCode(String telephoneCode) {
+        this.telephoneCode = telephoneCode;
+    }
+
     public String getSchool() {
         return school;
     }
@@ -108,15 +122,15 @@ public class User {
         this.uclass = uclass;
     }
 
-    public int getState() {
-        return state;
+    public int getStatus() {
+        return status;
     }
 
-    public void setState(int state) {
-        this.state = state;
+    public void setStatus(int status) {
+        this.status = status;
     }
 
-    public User(String uid, String uname, String upassword, String sex, String telephone, String school, String secondarySchool, int ugrade, String uclass, int state) {
+    public User(String uid, String uname, String upassword, String sex, String telephone, String school, String secondarySchool, int ugrade, String uclass, int status) {
         this.uid = uid;
         this.uname = uname;
         this.upassword = upassword;
@@ -126,7 +140,7 @@ public class User {
         this.secondarySchool = secondarySchool;
         this.ugrade = ugrade;
         this.uclass = uclass;
-        this.state = state;
+        this.status = status;
     }
 
     public User() {

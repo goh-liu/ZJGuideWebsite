@@ -7,18 +7,46 @@
 	<constant name="struts.action.extension" value="action"/>
 	
 	<!-- 配置Action -->
+	<package name="user" extends="struts-default" namespace="/">
+		<action name="user_*_JSON" class="userAction" method="{1}">
+		</action>
+		<action name="user_*" class="userAction" method="{1}">
+			<result name="registerUI" type="dispatcher">/jsp/register.jsp</result>
+			<result name="loginUI" type="dispatcher">/jsp/login.jsp</result>
+			<result name="anonUI" type="dispatcher">jsp/anonymityFriend.jsp</result>
+            <result name="indexUI" type="dispatcher">/jsp/anonymityFriend.jsp</result>
+            <result name="adminUI" type="redirectAction">admin_adminUI_UI.action</result>
+		</action>
+	</package>
+
 	<package name="note" extends="struts-default" namespace="/">
-		<action name="note_*_JSON" class="noteAction" method="{1}"></action>
+		<action name="note_*_JSON" class="noteAction" method="{1}">
+
+		</action>
 		<action name="note_*" class="noteAction" method="{1}">
 			<result name="published_SUCCESS" type="redirectAction">note_noteUINew.action</result>
 			<result name="noteUI_SUCCESS" type="dispatcher">/jsp/upperclassmanNote.jsp</result>
-<!--			<result name="noteUI_SUCCESS" type="dispatcher">/jsp/upperclassmanNote.jsp</result>-->
-<!--			<result name="showNew_SUCCESS" type="dispatcher">/jsp/upperclassmanNote.jsp</result>-->
-<!--			<result name="showHot_SUCCESS" type="dispatcher">/jsp/upperclassmanNote.jsp</result>-->
-<!--			<result name="Objection_SUCCESS" type="dispatcher">/jsp/upperclassmanNote.jsp</result>-->
-<!--			<result name="Toreport_SUCCESS" type="dispatcher">/jsp/upperclassmanNote.jsp</result>-->
-<!--			<result name="delete_SUCCESS" type="dispatcher">/jsp/upperclassmanNote.jsp</result>-->
+			<result name="click_SUCCESS" type="redirectAction">note_noteUINew.action</result>
+			<result name="alter_SUCCESS" type="redirectAction">note_noteUINew.action</result>
 		</action>
+	</package>
 
+	<package name="team" extends="struts-default" namespace="/">
+		<action name="team_*_JSON" class="teamAction" method="{1}">
+		</action>
+		<action name="team_*" class="teamAction" method="{1}">
+			<result name="TeamUI" type="dispatcher">/jsp/commonGoal.jsp</result>
+			<result name="createTeam_SUCCESS" type="redirectAction">team_commonGoal.action</result>
+			<result name="showTeam_SUCCESS" type="redirectAction">team_TeamUI.action</result>
+		</action>
+	</package>
+
+
+	<package name="admin" extends="struts-default" namespace="/">
+        <action name="admin_*_UI" class="adminAction" method="{1}">
+            <result name="adminUI" type="dispatcher">/adminUI/adminUI.jsp</result>
+        </action>
+		<action name="admin_*" class="adminAction" method="{1}">
+		</action>
 	</package>
 </struts>

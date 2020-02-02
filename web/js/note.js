@@ -97,7 +97,6 @@ function showMyNoteDetails(noteId) {
 //显示我的信息
 function showMyMessages() {
     $.post("/ZJGuideWebsite_war_exploded/note_showMyMessages_JSON.action",function (data,status) {
-        console.log(data);
         if(data != null){
             $('.myMessages').html("");
         }

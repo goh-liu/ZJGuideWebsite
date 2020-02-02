@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.domain.TeamToreport" table="team_toreport">
+        <id name="toreportId">
+            <generator class="assigned"/>
+        </id>
+        <property name="teamId"/>
+        <property name="teamCaptainUid"/>
+        <property name="uid"/>
+        <property name="toreportText"/>
+        <property name="toreportTime"/>
+        <property name="isRead"/>
+    </class>
+</hibernate-mapping>

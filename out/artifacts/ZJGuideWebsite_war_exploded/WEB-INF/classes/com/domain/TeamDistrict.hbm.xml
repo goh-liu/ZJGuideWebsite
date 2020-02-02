@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <!-- 建立类与表的映射 -->
+    <class name="com.domain.TeamDistrict" table="team_district">
+        <!-- 建立类中的属性与表中的主键对应 -->
+        <id name="teamId" >
+            <!-- 主键生成策略 -->
+            <generator class="assigned"/>
+        </id>
+
+        <!-- 建立类中的普通的属性和表的字段的对应 -->
+        <property name="counter" insert="false" update="false"/>
+        <property name="uid"/>
+        <property name="teamName"/>
+        <property name="teamType"/>
+        <property name="teamPeopleNum"/>
+        <property name="currPeopleNum"/>
+        <property name="teamIntroduction"/>
+        <property name="joinCondition"/>
+        <property name="createTime"/>
+        <!-- 配置关联对象 -->
+        <set name="teamMember" lazy="false">
+            <key column="teamId" update="false"/>
+            <one-to-many class="com.domain.TeamMember"/>
+        </set>
+
+    </class>
+
+</hibernate-mapping>

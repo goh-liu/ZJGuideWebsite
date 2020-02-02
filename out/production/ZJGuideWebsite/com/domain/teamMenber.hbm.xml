@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <!-- 建立类与表的映射 -->
+    <class name="com.domain.TeamMember" table="team_Member" lazy="true">
+        <!-- 建立类中的属性与表中的主键对应 -->
+        <id name="TeamMemberId" >
+            <!-- 主键生成策略 -->
+            <generator class="assigned"/>
+        </id>
+
+        <!-- 建立类中的普通的属性和表的字段的对应 -->
+        <property name="teamId"/>
+        <property name="teamCaptainUid"/>
+        <property name="teamMemberUid"/>
+        <property name="consentJoin"/>
+        <property name="joinTime"/>
+        <!-- 配置关联对象 -->
+        <many-to-one name="teamUser" class="com.domain.UserIdAndName"  column="teamMemberUid"
+                     lazy="false" unique="true" insert="false" update="false"/>
+        <many-to-one name="teamIdAndName" class="com.domain.TeamIdAndName" column="teamId"
+                     lazy="false" unique="true" insert="false" update="false"/>
+
+    </class>
+
+</hibernate-mapping>

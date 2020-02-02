@@ -8,11 +8,11 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 import com.service.NoteService;
 import com.utils.MD5Utils;
+import com.utils.UUIDUtils;
 import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.interceptor.SessionAware;
 
 import javax.servlet.http.HttpServletResponse;
-import javax.xml.ws.Service;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Date;
@@ -71,8 +71,14 @@ public class NoteAction extends ActionSupport implements SessionAware,ModelDrive
      * @return
      */
     public String noteUINew(){
+        String uid = null;
         try {
-            PageModel pageModel = noteService.showNew(1,loginuser.getUid());
+            if(null != loginuser){
+                uid = loginuser.getUid();
+            }else {
+                uid = UUIDUtils.getId();
+            }
+            PageModel pageModel = noteService.showNew(1,uid);
             ServletActionContext.getRequest().getSession().setAttribute("page",pageModel);
         } catch (Exception e) {
             e.printStackTrace();
@@ -215,7 +221,7 @@ public class NoteAction extends ActionSupport implements SessionAware,ModelDrive
             e.printStackTrace();
         }
         ServletActionContext.getRequest().getSession().setAttribute("popupMessage","提出异议成功！学长将能看到您的意见。");
-        return "noteUI_SUCCESS";
+        return "click_SUCCESS";
     }
 
     /**
@@ -238,7 +244,7 @@ public class NoteAction extends ActionSupport implements SessionAware,ModelDrive
             e.printStackTrace();
         }
         ServletActionContext.getRequest().getSession().setAttribute("popupMessage","举报成功！感谢您的努力");
-        return "noteUI_SUCCESS";
+        return "click_SUCCESS";
     }
 
     /**
@@ -295,7 +301,7 @@ public class NoteAction extends ActionSupport implements SessionAware,ModelDrive
             e.printStackTrace();
         }
         ServletActionContext.getRequest().getSession().setAttribute("popupMessage","修改成功");
-        return "noteUI_SUCCESS";
+        return "alter_SUCCESS";
     }
 
     /**
@@ -318,7 +324,7 @@ public class NoteAction extends ActionSupport implements SessionAware,ModelDrive
     }
 
     /**
-     * 将myNoteList转为JSON字符串并返回给前端页面
+     * 将对象转为JSON字符串并返回给前端页面
      */
     public void returnJSONWithResp(Object obj){
         HttpServletResponse response = ServletActionContext.getResponse();

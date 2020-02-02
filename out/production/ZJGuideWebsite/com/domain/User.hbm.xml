@@ -8,7 +8,7 @@
         <!-- 建立类中的属性与表中的主键对应 -->
         <id name="uid" column="uid" >
             <!-- 主键生成策略 -->
-            <generator class="uuid"/>
+            <generator class="assigned"/>
         </id>
 
         <!-- 建立类中的普通的属性和表的字段的对应 -->
@@ -20,7 +20,7 @@
         <property name="secondarySchool" column="secondarySchool"/>
         <property name="ugrade" column="ugrade"/>
         <property name="uclass" column="uclass"/>
-        <property name="state" column="status"/>
+        <property name="status" column="status"/>
 
     </class>
 
