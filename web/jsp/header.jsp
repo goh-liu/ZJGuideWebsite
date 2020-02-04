@@ -29,7 +29,7 @@
                     <li><a href="#" data-toggle="modal" data-target="#loginAdmin">管理后台</a></li>
                     <li><a href="${pageContext.request.contextPath}/note_noteUINew.action" >学长寄语</a></li>
                     <li><a href="${pageContext.request.contextPath}/team_commonGoal.action">志同道合</a></li>
-                    <li><a href="${pageContext.request.contextPath}/AnonServlet?method=anonUI">匿名友人</a></li>
+                    <li><a href="${pageContext.request.contextPath}/anon_anonUI.action">匿名友人</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <c:if test="${empty loginUser}">

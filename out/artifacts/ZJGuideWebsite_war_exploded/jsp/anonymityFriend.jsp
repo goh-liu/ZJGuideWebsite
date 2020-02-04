@@ -70,7 +70,7 @@
                                     <h3>发表匿名内容</h3>
                                     <div>
                                         <form class="form-horizontal" id="anonForm"  method="post" enctype="multipart/form-data"
-                                              action="${pageContext.request.contextPath}/AnonServlet?method=anonWrite">
+                                              action="${pageContext.request.contextPath}/anon_anonWrite.action">
                                             <div class=form-group" >
                                                 <textarea class="form-control" name="anonWriteComment" rows="9" placeholder="请在此处输入您要说的内容"></textarea>
                                             </div>
@@ -133,11 +133,11 @@
                         <div class="col-sm-11">
                             <div>
                                 <strong style="margin-right: 30px;">匿名者${ac.counter}</strong>
-                                <a class="btn btn-xs anon_comment" onclick="comment_click(${ac.counter})">
+                                <a class="btn btn-xs anon_comment" onclick="comment_click('${ac.counter}','${ac.anonID}','${ac.uid}')">
                                     <img src="${pageContext.request.contextPath}/image/comment.png"
                                          style="width: 18px;height: 18px;">&ensp;评论
                                 </a>
-                                <a class="btn btn-xs anon_like" onclick="anon_like(this,'${ac.counter}')">
+                                <a class="btn btn-xs anon_like" onclick="anon_like(this,'${ac.anonID}')">
                                     <c:set var="like1" value="no"/>
                                     <c:forEach items="${page.map.get('likeList')}" var="ll">
                                         <c:if test="${ll.anonID == ac.anonID and ll.likeUID == loginUser.uid}">
@@ -153,7 +153,7 @@
                                     </c:if>
                                 </a>
                                 <c:if test="${ac.uid== loginUser.uid}">
-                                    <a class="btn btn-xs anon_del" onclick="anon_del(this,'${ac.counter}')">
+                                    <a class="btn btn-xs anon_del" onclick="anon_del(this,'${ac.counter}','${ac.anonID}')">
                                             <img src="${pageContext.request.contextPath}/image/del.png"
                                                  style="width: 18px;height: 18px;">&ensp;删除
                                     </a>
@@ -180,7 +180,7 @@
                                                 <div class="col-sm-12">
                                                     <strong>${cl.sourceUname}</strong>&ensp;：
                                                     <span>${cl.commentText}</span>&ensp;&ensp;
-                                                    <a class="btn btn-default btn-xs" onclick="comment_reply1('${ac.counter}','${cl.sourceUid}','${cl.sourceUname}','${cl.commentText}')">回复</a>&ensp;&ensp;
+                                                    <a class="btn btn-default btn-xs" onclick="comment_reply1('${ac.anonID}','${cl.sourceUid}','${cl.sourceUname}','${cl.commentText}')">回复</a>&ensp;&ensp;
                                                 </div>
                                             </c:if>
                                         </c:if>
@@ -190,7 +190,7 @@
                                                 <div class="col-sm-12">
                                                     <strong>${cl.sourceUname}</strong>&ensp;回复&ensp;<strong>${cl.destUname}</strong>&ensp;：
                                                     <span>${cl.commentText}</span>&ensp;&ensp;
-                                                    <a class="btn btn-default btn-xs" onclick="comment_reply2('${ac.counter}','${cl.sourceUid}','${cl.sourceUname}','${cl.destUname}','${cl.commentText}')">回复</a>&ensp;&ensp;
+                                                    <a class="btn btn-default btn-xs" onclick="comment_reply2('${ac.anonID}','${cl.sourceUid}','${cl.sourceUname}','${cl.destUname}','${cl.commentText}')">回复</a>&ensp;&ensp;
                                                 </div>
                                             </c:if>
                                         </c:if>
@@ -211,6 +211,14 @@
 </body>
 </html>
 <script>
+
+    //弹窗，显示action返回的信息
+    let popupMessage=""+'${popupMessage}';
+    if (popupMessage != ""){
+        alert(popupMessage);
+        <%session.setAttribute("popupMessage","");%>
+    }
+
     //判断用户自己是否有点赞自己的匿名说说
     function isOneselfLike(data) {
         return (JSON.stringify(data)).indexOf("${sessionScope.loginUser.uid}");

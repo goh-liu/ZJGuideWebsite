@@ -17,7 +17,9 @@ import java.util.Map;
 @Transactional
 public class NoteServiceImpl implements NoteService {
 
-    //自动注入Dao
+    /**
+     * 自动注入Dao
+     */
     private NoteDao noteDao;
 
     public void setNoteDao(NoteDao noteDao) {

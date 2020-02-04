@@ -5,7 +5,7 @@
 <struts>
 	<!-- 配置Struts2的常量 -->
 	<constant name="struts.action.extension" value="action"/>
-	
+	<constant name="struts.multipart.maxSize" value="100000000" />
 	<!-- 配置Action -->
 	<package name="user" extends="struts-default" namespace="/">
 		<action name="user_*_JSON" class="userAction" method="{1}">
@@ -13,9 +13,17 @@
 		<action name="user_*" class="userAction" method="{1}">
 			<result name="registerUI" type="dispatcher">/jsp/register.jsp</result>
 			<result name="loginUI" type="dispatcher">/jsp/login.jsp</result>
+			<result name="anonUI" type="redirectAction">anon_anonUI.action</result>
+			<result name="adminUI" type="redirectAction">admin_adminUI_UI.action</result>
+		</action>
+	</package>
+
+	<package name="anon" extends="struts-default" namespace="/">
+		<action name="anon_*_JSON" class="anonAction" method="{1}">
+		</action>
+		<action name="anon_*" class="anonAction" method="{1}">
 			<result name="anonUI" type="dispatcher">jsp/anonymityFriend.jsp</result>
-            <result name="indexUI" type="dispatcher">/jsp/anonymityFriend.jsp</result>
-            <result name="adminUI" type="redirectAction">admin_adminUI_UI.action</result>
+			<result name="anonUIAction" type="redirectAction">anon_anonUI.action</result>
 		</action>
 	</package>
 

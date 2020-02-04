@@ -16,7 +16,7 @@ public class AnonComments {
     private String commentText;
     private Date commentTime;
     private int commentOrReply;
-    private int isread;
+    private String isRead;
 
     public AnonComments() {
     }
@@ -93,12 +93,12 @@ public class AnonComments {
         this.commentOrReply = commentOrReply;
     }
 
-    public int getIsread() {
-        return isread;
+    public String getIsRead() {
+        return isRead;
     }
 
-    public void setIsread(int isread) {
-        this.isread = isread;
+    public void setIsRead(String isRead) {
+        this.isRead = isRead;
     }
 
     @Override
@@ -113,7 +113,7 @@ public class AnonComments {
                 ", commentText='" + commentText + '\'' +
                 ", commentTime=" + commentTime +
                 ", commentOrReply=" + commentOrReply +
-                ", isread=" + isread +
+                ", isRead=" + isRead +
                 '}';
     }
 }

@@ -15,5 +15,6 @@
         <property name="commentText"/>
         <property name="commentTime"/>
         <property name="commentOrReply"/>
+        <property name="isRead"/>
     </class>
 </hibernate-mapping>

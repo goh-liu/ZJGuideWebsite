@@ -187,14 +187,12 @@ public class UserAction extends ActionSupport {
                 autoLoginCookie.setMaxAge(60*60*24*3);
                 resp.addCookie(autoLoginCookie);
             }
-            //转发到首页
-            resp.sendRedirect("/ZJGuideWebsite_war_exploded/UserServlet?method=indexUI");
         } catch (Exception e) {
             //报错说明登录失败了
             req.getSession().setAttribute("popupMessage","用户名/密码错误，请重新登录！");
             return "loginUI";
         }
-        return null;
+        return "anonUI";
     }
 
     /**
@@ -281,7 +279,7 @@ public class UserAction extends ActionSupport {
         //判断验证码是否正确
         if (!CaptchaUtil.ver(cerifi,req)){
             req.getSession().setAttribute("popupMessage","验证码错误！");
-            return "indexUI";
+            return "anonUI";
         }
         try {
             UserIdAndName userIdAndName = userService.adminLogin(uname, upassword);

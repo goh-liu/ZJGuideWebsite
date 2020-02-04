@@ -58,6 +58,9 @@
 	</bean>
 	
 	<!-- 配置Action=================== -->
+	<bean id="anonAction" class="com.web.action.AnonAction" scope="prototype" >
+		<property name="anonService" ref="anonService"/>
+	</bean>
 	<bean id="noteAction" class="com.web.action.NoteAction" scope="prototype" >
 		<property name="noteService" ref="noteService"/>
 	</bean>
@@ -69,6 +72,9 @@
 	</bean>
 
 	<!-- 配置Service================== -->
+	<bean id="anonService" class="com.service.serviceImp.AnonServiceImp">
+		<property name="anonDao" ref="anonDao"/>
+	</bean>
 	<bean id="noteService" class="com.service.serviceImp.NoteServiceImpl">
 		<property name="noteDao" ref="noteDao"/>
 	</bean>
@@ -80,6 +86,9 @@
 	</bean>
 
 	<!-- 配置DAO====================== -->
+	<bean id="anonDao" class="com.dao.daoImp.AnonDaoImp">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
 	<bean id="noteDao" class="com.dao.daoImp.NoteDaoImpl">
 		<property name="sessionFactory" ref="sessionFactory"/>
 	</bean>
