@@ -72,7 +72,7 @@
                                         <form class="form-horizontal" id="anonForm"  method="post" enctype="multipart/form-data"
                                               action="${pageContext.request.contextPath}/anon_anonWrite.action">
                                             <div class=form-group" >
-                                                <textarea class="form-control" name="anonWriteComment" rows="9" placeholder="请在此处输入您要说的内容"></textarea>
+                                                <textarea class="form-control" name="anonContent" rows="9" placeholder="请在此处输入您要说的内容"></textarea>
                                             </div>
                                             <div class="form-group">
                                                 <div class="anonPrice" >
@@ -87,7 +87,7 @@
                                                                 <div class="row form-group">
                                                                     </br>
                                                                     <div class="col-sm-12">
-                                                                        <input id="input-id" name="file" multiple type="file" data-show-caption="true">
+                                                                        <input id="input-id" name="uploadFile" multiple type="file" data-show-caption="true">
                                                                     </div>
                                                                 </div>
                                                             </div>

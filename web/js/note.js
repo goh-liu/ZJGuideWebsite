@@ -67,7 +67,7 @@ function showMyNote() {
             var oneHtml =
                 "<a href='#' data-toggle=\"modal\" data-target=\"#showOneNoteDetails\" onclick='showMyNoteDetails(&apos;"+data[index].noteId+"&apos;)'>\n"+
                     "<div class=\"panel panel-default\" title='点击查看寄语的详情'>\n" +
-                    "  <div class=\"panel-heading\">"+time(data[index].publishedTime)+"</div>\n" +
+                    "  <div class=\"panel-heading\">"+data[index].publishedTime+"</div>\n" +
                     "  <div class=\"panel-body\">\n"+data[index].note+"</div>\n" +
                     "</div>\n"+
                 "</a>"
@@ -166,8 +166,8 @@ function alterNote(noteId) {
 
 }
 
-// 转化时间戳
-function time(time = +new Date()) {
-    var date = new Date(time + 8 * 3600 * 1000); // 增加8小时
-    return date.toJSON().substr(0, 19).replace('T', ' ');
-}
+// // 转化时间戳
+// function time(time = +new Date()) {
+//     var date = new Date(time + 8 * 3600 * 1000); // 增加8小时
+//     return date.toJSON().substr(0, 19).replace('T', ' ');
+// }

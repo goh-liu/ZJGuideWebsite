@@ -329,8 +329,8 @@ public class NoteAction extends ActionSupport implements SessionAware,ModelDrive
     public void returnJSONWithResp(Object obj){
         HttpServletResponse response = ServletActionContext.getResponse();
         response.setContentType("application/json;charset=utf-8");
-        //转为json格式字符串返回前端
-        String myNoteListJSON = JSON.toJSONString(obj,SerializerFeature.DisableCircularReferenceDetect);
+        //转为json格式字符串返回前端,后面参数去掉重复对象引用
+        String myNoteListJSON = JSON.toJSONStringWithDateFormat(obj,"yyyy-MM-dd  HH:mm:ss",SerializerFeature.DisableCircularReferenceDetect);
         PrintWriter out = null;
         try {
             out = response.getWriter();
@@ -341,4 +341,5 @@ public class NoteAction extends ActionSupport implements SessionAware,ModelDrive
         out.flush();
         out.close();
     }
+
 }

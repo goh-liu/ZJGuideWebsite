@@ -3,6 +3,8 @@ package com.web.action;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.domain.*;
+import com.mchange.lang.ShortUtils;
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.service.AnonService;
 import com.utils.UUIDUtils;
@@ -12,6 +14,8 @@ import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.commons.io.IOUtils;
 import org.apache.struts2.ServletActionContext;
+import org.aspectj.util.FileUtil;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
@@ -36,6 +40,43 @@ public class AnonAction extends ActionSupport {
     }
 
     /**
+     *定义一个File ,变量名要与jsp中的input标签的name一致
+     */
+    private List<File> uploadFile;
+    /**
+     *上传文件的mimeType类型
+     */
+    private List<String> uploadFileContentType;
+    /**
+     *上传文件的名称
+     */
+    private List<String> uploadFileFileName;
+
+    public List<File> getUploadFile() {
+        return uploadFile;
+    }
+
+    public void setUploadFile(List<File> uploadFile) {
+        this.uploadFile = uploadFile;
+    }
+
+    public List<String> getUploadFileContentType() {
+        return uploadFileContentType;
+    }
+
+    public void setUploadFileContentType(List<String> uploadFileContentType) {
+        this.uploadFileContentType = uploadFileContentType;
+    }
+
+    public List<String> getUploadFileFileName() {
+        return uploadFileFileName;
+    }
+
+    public void setUploadFileFileName(List<String> uploadFileFileName) {
+        this.uploadFileFileName = uploadFileFileName;
+    }
+
+    /**
      *   跳转到匿名友人板块
      */
     public String anonUI() {
@@ -55,67 +96,63 @@ public class AnonAction extends ActionSupport {
      */
     public String anonWrite() {
         HttpServletRequest req = ServletActionContext.getRequest();
-        AnonDistrict anonDistrict = null;
-        AnonPrice anonPrice = null;
+        AnonDistrict anonDistrict = new AnonDistrict();
         ArrayList<AnonPrice> anonPrices = new ArrayList<>();
+
         User user = (User) req.getSession().getAttribute("loginUser");
-        DiskFileItemFactory diskFileItemFactory = new DiskFileItemFactory();
-        ServletFileUpload upload = new ServletFileUpload(diskFileItemFactory);
+        String anonContent = req.getParameter("anonContent");
+        //封装anonDistrict的其他信息
+        anonDistrict.setAnonID(UUIDUtils.getId());
+        anonDistrict.setUid(user.getUid());
+        anonDistrict.setAnonContent(anonContent);
+        anonDistrict.setDeliveryTime(new Date());
+        anonDistrict.setLikeCoun(0);
+        anonDistrict.setStatus(1);
+        //封装anonPrice并将图片保存在硬盘中
         try {
-            List<FileItem> list = upload.parseRequest(req);
-            for (FileItem item : list) {
-                if(item.isFormField()){
-                    //5_如果当前的FileItem对象是普通项,将数据封装在anonDistrict
-                    if (null!=item.getString("utf-8")||"".equals(item.getString("utf-8"))){
-                        anonDistrict = new AnonDistrict();
-                        anonDistrict.setAnonID(UUIDUtils.getId());
-                        anonDistrict.setUid(user.getUid());
-                        anonDistrict.setAnonContent(item.getString("utf-8"));
-                        anonDistrict.setDeliveryTime(new Date());
-                        anonDistrict.setLikeCoun(0);
-                        anonDistrict.setStatus(1);
-                    }
-                }else{
-                    //获取到原始的文件名称,若没有，直接跳出本次循环
-                    String oldFileName=item.getName();
-                    if(null==oldFileName||"".equals(oldFileName)){
-                        break;
-                    }
-                    //获取到要保存文件的名称
-                    String newFileName= UploadUtils.getUUIDName(oldFileName);
-                    //通过FileItem获取到输入流对象,通过输入流可以获取到图片二进制数据
-                    InputStream is=item.getInputStream();
-                    //获取到当前项目下anonImage下的真实路径
-                    /*String realPath=getServletContext().getRealPath("F:/anonImage");*/
-                    String realPath="F:/Image";
-                    String dir= UploadUtils.getDir(newFileName);
-                    String path=realPath+dir;
-                    //内存中声明一个目录
-                    File newDir=new File(path);
-                    if(!newDir.exists()){
-                        newDir.mkdirs();
-                    }
-                    //在服务端创建一个空文件(后缀必须和上传到服务端的文件名后缀一致)
-                    File finalFile=new File(newDir,newFileName);
-                    if(!finalFile.exists()){
-                        finalFile.createNewFile();
-                    }
-                    //建立和空文件对应的输出流
-                    OutputStream os=new FileOutputStream(finalFile);
-                    //将输入流中的数据刷到输出流中
-                    IOUtils.copy(is, os);
-                    //释放资源
-                    IOUtils.closeQuietly(is);
-                    IOUtils.closeQuietly(os);
-                    //图片的路径
-                    String priceUrl = dir+"/"+newFileName;
-                    //将数据封装在price对象中
-                    anonPrice = new AnonPrice();
-                    anonPrice.setAnonID(anonDistrict.getAnonID());
-                    anonPrice.setPriceUrl(priceUrl);
-                    anonPrice.setStatus(1);
-                    anonPrices.add(anonPrice);
+            int i = 0;
+            for (File uploadFile : uploadFile) {
+                //获取到原始的文件名称,若没有，直接跳出本次循环
+                String oldFileName = uploadFileFileName.get(i);
+                i++;
+                System.out.println("--------------");
+                System.out.println("oldFileName"+oldFileName);
+                if(null == oldFileName||"".equals(oldFileName)){
+                    break;
                 }
+                //获取到要保存文件的名称
+                String newFileName= UploadUtils.getUUIDName(oldFileName);
+                //通过FileItem获取到输入流对象,通过输入流可以获取到图片二进制数据
+                InputStream is = new FileInputStream(uploadFile);
+                //获取到当前项目下anonImage下的真实路径
+                String realPath="F:/Image";
+                String dir= UploadUtils.getDir(newFileName);
+                String path=realPath+dir;
+                //内存中声明一个目录
+                File newDir=new File(path);
+                if(!newDir.exists()){
+                   newDir.mkdirs();
+                }
+                //在服务端创建一个空文件(后缀必须和上传到服务端的文件名后缀一致)
+                File finalFile=new File(newDir,newFileName);
+                if(!finalFile.exists()){
+                    finalFile.createNewFile();
+                }
+                //建立和空文件对应的输出流
+                OutputStream os=new FileOutputStream(finalFile);
+                //将输入流中的数据刷到输出流中
+                IOUtils.copy(is, os);
+                //释放资源
+                IOUtils.closeQuietly(is);
+                IOUtils.closeQuietly(os);
+                //图片的路径
+                String priceUrl = dir+"/"+newFileName;
+                //将数据封装在price对象中
+                AnonPrice anonPrice = new AnonPrice();
+                anonPrice.setAnonID(anonDistrict.getAnonID());
+                anonPrice.setPriceUrl(priceUrl);
+                anonPrice.setStatus(1);
+                anonPrices.add(anonPrice);
             }
             anonService.anonWrite(anonDistrict, anonPrices);
             req.setAttribute("popupMessage","发表成功！点击《已发表》可查看");

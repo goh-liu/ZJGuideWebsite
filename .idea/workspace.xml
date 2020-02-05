@@ -8,50 +8,27 @@
   <component name="ChangeListManager">
     <list default="true" id="fcb2bd5e-b0eb-4d2d-b749-019dc2ce00e4" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/dao/AnonDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/dao/AnonDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/dao/daoImp/AnonDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/dao/daoImp/AnonDaoImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/domain/AnonComments.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/domain/AnonComments.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/domain/AnonComments.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/domain/AnonComments.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/service/AnonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/service/AnonService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/service/serviceImp/AnonServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/service/serviceImp/AnonServiceImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/service/serviceImp/NoteServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/service/serviceImp/NoteServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/web/action/AnonAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/web/action/AnonAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/web/action/NoteAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/web/action/NoteAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/web/action/TeamAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/web/action/TeamAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/web/action/UserAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/web/action/UserAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/web/servlet/AnonServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/com/web/servlet/UserServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/classes/struts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/js/anon.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/js/anon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/js/note.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/js/note.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/js/team.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/js/team.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/jsp/anonymityFriend.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/jsp/anonymityFriend.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/jsp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ZJGuideWebsite_war_exploded/jsp/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ZJGuideWebsite/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/dao/AnonDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/dao/AnonDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/dao/daoImp/AnonDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/dao/daoImp/AnonDaoImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/domain/AnonComments.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/domain/AnonComments.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/domain/AnonComments.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/domain/AnonComments.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/service/AnonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/service/AnonService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/service/serviceImp/AnonServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/service/serviceImp/AnonServiceImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/service/serviceImp/NoteServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/service/serviceImp/NoteServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/web/action/AnonAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/web/action/AnonAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/web/action/NoteAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/web/action/NoteAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/web/action/TeamAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/web/action/TeamAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/web/action/UserAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/web/action/UserAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/web/servlet/AnonServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/com/web/servlet/UserServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ZJGuideWebsite/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ZJGuideWebsite/struts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dao/AnonDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dao/AnonDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dao/daoImp/AnonDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dao/daoImp/AnonDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/domain/AnonComments.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/domain/AnonComments.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/domain/AnonComments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/domain/AnonComments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/service/AnonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/service/AnonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/service/serviceImp/AnonServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/service/serviceImp/AnonServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/service/serviceImp/NoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/service/serviceImp/NoteServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/web/action/AnonAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/web/action/AnonAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/web/action/NoteAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/web/action/NoteAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/web/action/TeamAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/web/action/TeamAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/web/action/UserAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/web/action/UserAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/web/servlet/AnonServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/web/servlet/UserServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/struts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/anon.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/anon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/note.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/note.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/team.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/team.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/jsp/anonymityFriend.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/anonymityFriend.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/header.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -127,17 +104,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/web/action/UserAction.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/web/action/AnonAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="194" column="22" selection-start-line="194" selection-start-column="16" selection-end-line="194" selection-end-column="22" />
+            <state relative-caret-position="859">
+              <caret line="150" column="54" selection-start-line="150" selection-start-column="54" selection-end-line="150" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#verificationCode#0;class#UserAction#0" />
-                <element signature="method#exitLogin#0;class#UserAction#0" />
-                <element signature="method#findpassword#0;class#UserAction#0" />
+                <element signature="e#1436#1437#0" expanded="true" />
+                <element signature="e#1469#1470#0" expanded="true" />
+                <element signature="e#1525#1526#0" expanded="true" />
+                <element signature="e#1569#1570#0" expanded="true" />
+                <element signature="e#1623#1624#0" expanded="true" />
+                <element signature="e#1667#1668#0" expanded="true" />
+                <element signature="e#1864#1865#0" expanded="true" />
+                <element signature="e#1905#1906#0" expanded="true" />
+                <element signature="e#1979#1980#0" expanded="true" />
+                <element signature="e#2039#2040#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/struts.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/utils/RequestParseWrapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/jsp/anonymityFriend.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1258">
+              <caret line="74" column="96" selection-start-line="74" selection-start-column="85" selection-end-line="74" selection-end-column="96" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/dao/daoImp/AnonDaoImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1309">
+              <caret line="94" selection-start-line="94" selection-end-line="94" />
             </state>
           </provider>
         </entry>
@@ -159,13 +192,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>teamMenber</find>
-      <find>userIdAndName</find>
-      <find>Peopel</find>
-      <find>note</find>
-      <find>consent</find>
-      <find>returnJSONWithResp</find>
-      <find>dest</find>
       <find>deleteAnon</find>
       <find>deleteID</find>
       <find>state</find>
@@ -189,6 +215,13 @@
       <find>isRead</find>
       <find>anon_anonDel_JSON</find>
       <find>anon_del</find>
+      <find>autoLogining</find>
+      <find>time</find>
+      <find>returnJSONWithResp</find>
+      <find>time(</find>
+      <find>struts.multipart.parser</find>
+      <find>handler</find>
+      <find>multipart</find>
     </findStrings>
     <replaceStrings>
       <replace>oneAnonMap.get('anonDistrict').</replace>
@@ -234,14 +267,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/service/TeamService.java" />
-        <option value="$PROJECT_DIR$/src/com/web/action/TeamAction.java" />
         <option value="$PROJECT_DIR$/web/jsp/commonGoal.jsp" />
         <option value="$PROJECT_DIR$/web/adminUI/css/adminUI.css" />
-        <option value="$PROJECT_DIR$/web/js/note.js" />
-        <option value="$PROJECT_DIR$/src/com/web/action/NoteAction.java" />
         <option value="$PROJECT_DIR$/src/com/domain/NoteDistrict.hbm.xml" />
-        <option value="$PROJECT_DIR$/web/js/team.js" />
         <option value="$PROJECT_DIR$/src/com/domain/TeamDistrict.java" />
         <option value="$PROJECT_DIR$/src/com/web/servlet/UserServlet.java" />
         <option value="$PROJECT_DIR$/src/com/domain/AnonLike.java" />
@@ -274,17 +302,22 @@
         <option value="$PROJECT_DIR$/src/com/domain/AnonDistrict.hbm.xml" />
         <option value="$PROJECT_DIR$/src/com/service/AnonService.java" />
         <option value="$PROJECT_DIR$/src/com/dao/AnonDao.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/com/service/serviceImp/AnonServiceImp.java" />
         <option value="$PROJECT_DIR$/web/jsp/header.jsp" />
-        <option value="$PROJECT_DIR$/src/com/web/action/UserAction.java" />
-        <option value="$PROJECT_DIR$/web/jsp/anonymityFriend.jsp" />
-        <option value="$PROJECT_DIR$/src/struts.xml" />
         <option value="$PROJECT_DIR$/src/com/domain/AnonComments.hbm.xml" />
         <option value="$PROJECT_DIR$/src/com/domain/AnonComments.java" />
-        <option value="$PROJECT_DIR$/src/com/web/action/AnonAction.java" />
         <option value="$PROJECT_DIR$/src/com/dao/daoImp/AnonDaoImp.java" />
         <option value="$PROJECT_DIR$/web/js/anon.js" />
+        <option value="$PROJECT_DIR$/src/com/web/action/NoteAction.java" />
+        <option value="$PROJECT_DIR$/src/com/web/action/TeamAction.java" />
+        <option value="$PROJECT_DIR$/src/com/web/action/UserAction.java" />
+        <option value="$PROJECT_DIR$/web/js/note.js" />
+        <option value="$PROJECT_DIR$/web/js/team.js" />
+        <option value="$PROJECT_DIR$/src/com/utils/RequestParseWrapper.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/jsp/anonymityFriend.jsp" />
+        <option value="$PROJECT_DIR$/src/com/web/action/AnonAction.java" />
+        <option value="$PROJECT_DIR$/src/struts.xml" />
       </list>
     </option>
   </component>
@@ -295,9 +328,8 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="9" />
-    <option name="y" value="18" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-44" />
     <option name="width" value="1938" />
     <option name="height" value="1089" />
   </component>
@@ -314,8 +346,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -862,6 +894,9 @@
       <workItem from="1580697202010" duration="2104000" />
       <workItem from="1580699382738" duration="20934000" />
       <workItem from="1580781638671" duration="4952000" />
+      <workItem from="1580786815644" duration="3037000" />
+      <workItem from="1580828388857" duration="11425000" />
+      <workItem from="1580873154752" duration="2890000" />
     </task>
     <servers />
   </component>
@@ -886,7 +921,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1065363000" />
+    <option name="totallyTimeSpent" value="1082715000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -898,10 +933,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <frame x="-29" y="0" width="1292" height="726" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" x="62" y="0" width="527" height="1211" id="Project" order="0" sideWeight="0.49834436" visible="true" weight="0.27970898" />
+      <window_info content_ui="combo" x="62" y="0" width="527" height="1211" id="Project" order="0" sideWeight="0.49834436" visible="true" weight="0.22285251" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -911,7 +946,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32504147" />
-      <window_info anchor="bottom" x="1983" y="48" width="1172" height="585" id="Run" order="2" type="FLOATING" weight="0.5985267" />
+      <window_info anchor="bottom" x="1980" y="28" width="1172" height="585" id="Run" order="2" type="FLOATING" weight="0.5985267" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -924,7 +959,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3283582" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.3283582" />
-      <window_info anchor="bottom" x="22" y="211" width="1237" height="298" id="调试" order="15" sideWeight="0.4995958" weight="0.5074627" />
+      <window_info anchor="bottom" x="22" y="211" width="1237" height="298" id="调试" order="15" sideWeight="0.4995958" weight="0.49253732" />
       <window_info anchor="bottom" id="Spring" order="16" weight="0.3283582" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1010,28 +1045,16 @@
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/dao/daoImp/AnonDaoImp.java</url>
-          <line>94</line>
-          <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/dao/daoImp/AnonDaoImp.java</url>
-          <line>98</line>
-          <properties />
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/dao/daoImp/AnonDaoImp.java</url>
-          <line>104</line>
-          <properties />
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/web/action/AnonAction.java</url>
-          <line>300</line>
+          <line>337</line>
           <properties />
           <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/utils/UploadUtils.java</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1040,181 +1063,11 @@
         <watch expression="((HashMap)myMessageMap).entrySet().toArray()[1]" custom="java.util.HashMap" />
         <watch expression="((TeamMember)((java.util.ArrayList)((HashMap.Node)((HashMap)myMessageMap).entrySet().toArray()[1]).getValue()).get(0)).teamUser" custom="com.domain.TeamMember,java.util.ArrayList,java.util.HashMap.Node,java.util.HashMap" />
         <watch expression="((MultiPartRequestWrapper)req).request" custom="org.apache.struts2.dispatcher.multipart.MultiPartRequestWrapper" />
+        <watch expression="anonPrices.get(1).priceUrl" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/service/NoteService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/com.web.action.UserAction">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>com.web.action.UserAction</OriginalElement>
-          <nodes>
-            <node x="" y="">com.opensymphony.xwork2.Validateable</node>
-            <node x="" y="">com.opensymphony.xwork2.LocaleProvider</node>
-            <node x="" y="">com.opensymphony.xwork2.ActionSupport</node>
-            <node x="" y="">com.opensymphony.xwork2.ValidationAware</node>
-            <node x="" y="">com.opensymphony.xwork2.Action</node>
-            <node x="" y="">org.springframework.stereotype.Controller</node>
-            <node x="" y="">com.web.action.UserAction</node>
-            <node x="" y="">com.opensymphony.xwork2.TextProvider</node>
-            <node x="" y="">java.io.Serializable</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.2828810020876827" x="652.0" y="938.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/com.web.action.TeamAction">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>com.web.action.TeamAction</OriginalElement>
-          <nodes>
-            <node x="" y="">com.opensymphony.xwork2.Validateable</node>
-            <node x="" y="">com.web.action.TeamAction</node>
-            <node x="" y="">com.opensymphony.xwork2.LocaleProvider</node>
-            <node x="" y="">com.opensymphony.xwork2.ActionSupport</node>
-            <node x="" y="">com.opensymphony.xwork2.ValidationAware</node>
-            <node x="" y="">com.opensymphony.xwork2.Action</node>
-            <node x="" y="">org.apache.struts2.interceptor.SessionAware</node>
-            <node x="" y="">com.opensymphony.xwork2.TextProvider</node>
-            <node x="" y="">java.io.Serializable</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.24726277372262773" x="652.0" y="1076.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/com.web.action">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>com.web.action</OriginalElement>
-          <nodes>
-            <node x="" y="">com.web.action.NoteAction</node>
-            <node x="" y="">com.web.action.AdminAction</node>
-            <node x="" y="">com.web.action.TeamAction</node>
-            <node x="" y="">com.web.action.UserAction</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.820653218059558" x="602.0" y="323.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/web/servlet/UserServlet.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/web/filter/EncodingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JavaScript-modules-diagram/F:/ZJGuideWebsite/src/com/service">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JavaScript-modules-diagram</ID>
-          <OriginalElement>$PROJECT_DIR$/src/com/service</OriginalElement>
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="479.0" y="276.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>All</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>Details</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/com.service.serviceImp">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>com.service.serviceImp</OriginalElement>
-          <nodes>
-            <node x="" y="">com.service.serviceImp.UserServiceImp</node>
-            <node x="" y="">com.service.serviceImp.AnonServiceImp</node>
-            <node x="" y="">com.service.serviceImp.TeamServiceImp</node>
-            <node x="" y="">com.service.serviceImp.AdminServiceImp</node>
-            <node x="" y="">com.service.serviceImp.NoteServiceImpl</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.46774193548387094" x="525.0" y="559.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/com.service">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>com.service</OriginalElement>
-          <nodes>
-            <node x="" y="">com.service.AnonService</node>
-            <node x="" y="">com.service.NoteService</node>
-            <node x="" y="">com.service.serviceImp</node>
-            <node x="" y="">com.service.TeamService</node>
-            <node x="" y="">com.service.AdminService</node>
-            <node x="" y="">com.service.UserService</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.5713432835820895" x="825.0" y="389.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://JAVA/com.dao.daoImp">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1417,52 +1270,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/web/action/AdminAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="401" lean-forward="true" selection-start-line="401" selection-end-line="401" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="method#showAnonCoun#0;class#AdminAction#0" />
-            <element signature="method#showAnon#0;class#AdminAction#0" />
-            <element signature="method#showNoteCoun#0;class#AdminAction#0" />
-            <element signature="method#showNote#0;class#AdminAction#0" />
-            <element signature="method#showTeamCoun#0;class#AdminAction#0" />
-            <element signature="method#showTeam#0;class#AdminAction#0" />
-            <element signature="method#showUserCoun#0;class#AdminAction#0" />
-            <element signature="method#deleteNote#0;class#AdminAction#0" />
-            <element signature="method#deleteTeam#0;class#AdminAction#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/web/action/TeamAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="82" column="7" selection-start-line="81" selection-start-column="12" selection-end-line="82" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#showTeam#0;class#TeamAction#0" />
-            <element signature="method#clickToreport#0;class#TeamAction#0" />
-            <element signature="method#joinTeam#0;class#TeamAction#0" />
-            <element signature="e#8046#8047#0" expanded="true" />
-            <element signature="e#8081#8082#0" expanded="true" />
-            <element signature="e#8143#8144#0" expanded="true" />
-            <element signature="e#8191#8192#0" expanded="true" />
-            <element signature="e#8232#8233#0" expanded="true" />
-            <element signature="e#8265#8266#0" expanded="true" />
-            <element signature="e#8321#8322#0" expanded="true" />
-            <element signature="e#8365#8366#0" expanded="true" />
-            <element signature="e#8410#8411#0" expanded="true" />
-            <element signature="e#8445#8446#0" expanded="true" />
-            <element signature="e#8507#8508#0" expanded="true" />
-            <element signature="e#8555#8556#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
@@ -1482,25 +1289,11 @@
         <state relative-caret-position="-2208" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/upperclassmanNote.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="233" selection-start-line="233" selection-end-line="241" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/web/servlet/AnonServlet.java" />
     <entry file="file://$PROJECT_DIR$/web/jsp/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="31" column="86" selection-start-line="31" selection-start-column="86" selection-end-line="31" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
@@ -1559,14 +1352,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dao/AnonDao.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1629,27 +1414,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dao/daoImp/AnonDaoImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="205" selection-start-line="205" selection-end-line="205" />
-          <folding>
-            <element signature="e#0#33#1" expanded="true" />
-            <element signature="e#0#14#0" expanded="true" />
-            <element signature="e#0#27#0" expanded="true" />
-            <element signature="e#0#44#1" expanded="true" />
-            <element signature="e#0#47#1" expanded="true" />
-            <element signature="e#0#43#1" expanded="true" />
-            <element signature="e#0#73#1" expanded="true" />
-            <element signature="e#0#31#1" expanded="true" />
-            <element signature="e#0#34#1" expanded="true" />
-            <element signature="e#0#30#1" expanded="true" />
-            <element signature="e#0#63#1" expanded="true" />
-            <element signature="e#1#83#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dao/daoImp/TeamDaoImp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1343">
@@ -1669,17 +1433,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/anonymityFriend.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/utils/CookieUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="155" column="84" selection-start-line="155" selection-start-column="76" selection-end-line="155" selection-end-column="84" />
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/web/action/TeamAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="268" column="5" selection-start-line="268" selection-start-column="5" selection-end-line="268" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#showTeam#0;class#TeamAction#0" />
+            <element signature="method#clickToreport#0;class#TeamAction#0" />
+            <element signature="method#joinTeam#0;class#TeamAction#0" />
+            <element signature="e#8046#8047#0" expanded="true" />
+            <element signature="e#8081#8082#0" expanded="true" />
+            <element signature="e#8143#8144#0" expanded="true" />
+            <element signature="e#8191#8192#0" expanded="true" />
+            <element signature="e#8232#8233#0" expanded="true" />
+            <element signature="e#8265#8266#0" expanded="true" />
+            <element signature="e#8321#8322#0" expanded="true" />
+            <element signature="e#8365#8366#0" expanded="true" />
+            <element signature="e#8410#8411#0" expanded="true" />
+            <element signature="e#8445#8446#0" expanded="true" />
+            <element signature="e#8507#8508#0" expanded="true" />
+            <element signature="e#8555#8556#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/web/action/UserAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="311" selection-start-line="311" selection-end-line="311" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#verificationCode#0;class#UserAction#0" />
+            <element signature="method#exitLogin#0;class#UserAction#0" />
+            <element signature="method#findpassword#0;class#UserAction#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/web/action/AdminAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="401" lean-forward="true" selection-start-line="401" selection-end-line="401" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
+            <element signature="method#showAnonCoun#0;class#AdminAction#0" />
+            <element signature="method#showAnon#0;class#AdminAction#0" />
+            <element signature="method#showNoteCoun#0;class#AdminAction#0" />
+            <element signature="method#showNote#0;class#AdminAction#0" />
+            <element signature="method#showTeamCoun#0;class#AdminAction#0" />
+            <element signature="method#showTeam#0;class#AdminAction#0" />
+            <element signature="method#showUserCoun#0;class#AdminAction#0" />
+            <element signature="method#deleteNote#0;class#AdminAction#0" />
+            <element signature="method#deleteTeam#0;class#AdminAction#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/anon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-209">
-          <caret line="239" column="114" selection-start-line="239" selection-start-column="114" selection-end-line="239" selection-end-column="114" />
+        <state relative-caret-position="-289">
+          <caret line="245" column="32" lean-forward="true" selection-start-line="245" selection-start-column="32" selection-end-line="245" selection-end-column="32" />
           <folding>
             <element signature="e#789#795#0" expanded="true" />
             <element signature="e#796#802#0" expanded="true" />
@@ -1724,33 +1547,127 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/utils/CookieUtils.java">
+    <entry file="file://$PROJECT_DIR$/web/js/team.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="2210">
+          <caret line="130" column="36" selection-start-line="130" selection-start-column="36" selection-end-line="130" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/upperclassmanNote.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3961">
+          <caret line="233" selection-start-line="233" selection-end-line="241" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/note.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/struts2-core-2.3.24.jar!/struts-default.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="83" column="72" selection-start-line="83" selection-start-column="56" selection-end-line="83" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/ognl-3.0.6.jar!/ognl/OgnlRuntime.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="404" column="25" selection-start-line="404" selection-start-column="25" selection-end-line="404" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/web/action/NoteAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="131" column="26" selection-start-line="131" selection-start-column="8" selection-end-line="131" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/commonGoal.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-918" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/utils/UUIDUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding>
+            <element signature="e#137#138#0" expanded="true" />
+            <element signature="e#210#211#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/utils/RequestParseWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jsp/anonymityFriend.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="74" column="96" selection-start-line="74" selection-start-column="85" selection-end-line="74" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dao/daoImp/AnonDaoImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/utils/UploadUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/web/action/AnonAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="300" selection-start-line="300" selection-end-line="300" />
+        <state relative-caret-position="859">
+          <caret line="150" column="54" selection-start-line="150" selection-start-column="54" selection-end-line="150" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1436#1437#0" expanded="true" />
+            <element signature="e#1469#1470#0" expanded="true" />
+            <element signature="e#1525#1526#0" expanded="true" />
+            <element signature="e#1569#1570#0" expanded="true" />
+            <element signature="e#1623#1624#0" expanded="true" />
+            <element signature="e#1667#1668#0" expanded="true" />
+            <element signature="e#1864#1865#0" expanded="true" />
+            <element signature="e#1905#1906#0" expanded="true" />
+            <element signature="e#1979#1980#0" expanded="true" />
+            <element signature="e#2039#2040#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/web/action/UserAction.java">
+    <entry file="file://$PROJECT_DIR$/src/struts.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="194" column="22" selection-start-line="194" selection-start-column="16" selection-end-line="194" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#verificationCode#0;class#UserAction#0" />
-            <element signature="method#exitLogin#0;class#UserAction#0" />
-            <element signature="method#findpassword#0;class#UserAction#0" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
         </state>
       </provider>
     </entry>

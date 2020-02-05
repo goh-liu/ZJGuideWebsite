@@ -2,10 +2,16 @@
 <!DOCTYPE struts PUBLIC
 	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
 <struts>
 	<!-- 配置Struts2的常量 -->
 	<constant name="struts.action.extension" value="action"/>
-	<constant name="struts.multipart.maxSize" value="100000000" />
+
+	<!--上传图片到Struts2时出现问题的解决-->
+	<constant name="struts.multipart.maxSize" value="100000000"></constant>
+
+
+
 	<!-- 配置Action -->
 	<package name="user" extends="struts-default" namespace="/">
 		<action name="user_*_JSON" class="userAction" method="{1}">

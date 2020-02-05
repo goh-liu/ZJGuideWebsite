@@ -81,7 +81,7 @@ function showMyMessagesDetails(teamId,teamMemberId,consentJoin,uname) {
         $('.timePanel .teamPeople').html(teamPeople);
         $('.timePanel .teamIntroduction').html(data.teamIntroduction);
         $('.timePanel .joinCondition').html(data.joinCondition);
-        $('.timePanel .createTime').html(time(data.createTime));
+        $('.timePanel .createTime').html(data.createTime);
         $('.timePanel1').html(uname);
         if ("false" == consentJoin) {
             $('.falseAudit').attr("href","/ZJGuideWebsite_war_exploded/team_auditApply.action?audit=disagree&teamMemberId="+teamMemberId);
@@ -102,7 +102,7 @@ function showMyMessagesDetails1(teamId,toreportId) {
         $('.timePanel .teamPeople').html(teamPeople);
         $('.timePanel .teamIntroduction').html(data.teamIntroduction);
         $('.timePanel .joinCondition').html(data.joinCondition);
-        $('.timePanel .createTime').html(time(data.createTime));
+        $('.timePanel .createTime').html(data.createTime);
         $('.OneTeamDetails-body>div:last-child').remove();
         $('.OneTeamDetails-footer>a').remove();
     });
@@ -156,13 +156,13 @@ function showMyTeam() {
 //显示队伍详细信息
 function showTeamDetail(teamId) {
     $.post("/ZJGuideWebsite_war_exploded/team_showTeamByTeamId_JSON.action",{teamId:teamId},function (data, status){
-        var teamPeople = data.currPeopleNum +" / "+data.teamPeopleNum;
+        let teamPeople = data.currPeopleNum +" / "+data.teamPeopleNum;
         $('.timePanel2 .counter').html(data.counter);
         $('.timePanel2 .teamName').html(data.teamName);
         $('.timePanel2 .teamPeople').html(teamPeople);
         $('.timePanel2 .teamIntroduction').html(data.teamIntroduction);
         $('.timePanel2 .joinCondition').html(data.joinCondition);
-        $('.timePanel2 .createTime').html(time(data.createTime));
+        $('.timePanel2 .createTime').html(data.createTime);
         $('.timePanel3').html("");
         for (var index in data.teamMember) {
             var num = Number(1)+Number(index);
@@ -171,8 +171,8 @@ function showTeamDetail(teamId) {
     });
 }
 
-// 转化时间戳
-function time(time = +new Date()) {
-    var date = new Date(time + 8 * 3600 * 1000); // 增加8小时
-    return date.toJSON().substr(0, 19).replace('T', ' ');
-}
+// // 转化时间戳
+// function time(time = +new Date()) {
+//     var date = new Date(time + 8 * 3600 * 1000); // 增加8小时
+//     return date.toJSON().substr(0, 19).replace('T', ' ');
+// }
