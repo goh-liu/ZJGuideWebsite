@@ -164,15 +164,14 @@ function showTeamDetail(teamId) {
         $('.timePanel2 .joinCondition').html(data.joinCondition);
         $('.timePanel2 .createTime').html(data.createTime);
         $('.timePanel3').html("");
-        for (var index in data.teamMember) {
-            var num = Number(1)+Number(index);
-            $('.timePanel3').append(num+"&ensp;:&ensp;&ensp;"+data.teamMember[index].teamUser.uname+"&ensp;&ensp;&ensp;")
+        let num = 0;
+        for (let index in data.teamMember) {
+            if ("true"==data.teamMember[index].consentJoin) {
+                num++;
+                $('.timePanel3').append(num+"&ensp;:&ensp;&ensp;"+data.teamMember[index].teamUser.uname+"&ensp;&ensp;&ensp;")
+            }
         }
     });
 }
 
-// // 转化时间戳
-// function time(time = +new Date()) {
-//     var date = new Date(time + 8 * 3600 * 1000); // 增加8小时
-//     return date.toJSON().substr(0, 19).replace('T', ' ');
-// }
+

@@ -3,7 +3,7 @@
     width: 316px;
     height: 100%;
     position: fixed;
-    z-index: 99999;
+    z-index: 999;
 }
 .body_left>div{
     padding: 5px 10px 0px 10px;

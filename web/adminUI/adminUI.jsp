@@ -22,7 +22,7 @@
         <div class="topNav">
             <div class="markedWord">校园论坛管理后台</div>
             <div class="enterArea">
-                欢迎登陆：<strong>${adminUser.uname}</strong>
+                欢迎登录：<strong>${adminUser.uname}</strong>
                 <div>
                     <el-link type="danger">退出</el-link>
                 </div>

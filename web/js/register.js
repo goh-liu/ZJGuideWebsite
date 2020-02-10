@@ -45,7 +45,7 @@ $(function(){
 		}else if($(this).is("#Reupassword")){
 			//uPass是第一次输入的密码
 			let uPass = document.getElementById("upassword").value;
-			if(inputText == uPass){
+			if(uPass != "" && inputText == uPass){
 				$(this).parent().parent().append("<span class='formtips'><img src='image/reg2.gif'></span>");
 			}else{
 				$(this).parent().parent().append("<span class='formtips'><img src='image/reg1.gif'>两次密码不一样</span>");
@@ -104,7 +104,6 @@ function verificationCode() {
 	}else {
 		$.post("/ZJGuideWebsite_war_exploded/user_verificationCode_JSON.action",{telephone:telephone},function (data,status) {
 			veri_butonTime();
-			alert(data);
 		});
 	}
 

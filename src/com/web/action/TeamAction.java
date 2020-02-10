@@ -138,7 +138,6 @@ public class TeamAction extends ActionSupport implements SessionAware{
         teamMember.setTeamMemberUid(uid);
         teamMember.setConsentJoin("false");
         teamMember.setJoinTime(new Date());
-        System.out.println(teamMember);
         try {
             teamService.saveTeamMember(teamMember);
             ServletActionContext.getRequest().getSession().setAttribute("popupMessage","申请加入中，请等待队长同意！！");
@@ -170,7 +169,6 @@ public class TeamAction extends ActionSupport implements SessionAware{
         String teamId = ServletActionContext.getRequest().getParameter("teamId");
         try {
             teamDistrict1 = teamService.showTeamByTeamId(teamId);
-
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -182,6 +180,7 @@ public class TeamAction extends ActionSupport implements SessionAware{
      * @return
      */
     public String auditApply(){
+        //audit == agree 同意加入
         String audit = ServletActionContext.getRequest().getParameter("audit");
         String teamMemberId = ServletActionContext.getRequest().getParameter("teamMemberId");
         try {
@@ -192,7 +191,6 @@ public class TeamAction extends ActionSupport implements SessionAware{
             }else {
                 popupMessage = "不同意加入！！";
             }
-
             ServletActionContext.getRequest().getSession().setAttribute("popupMessage",popupMessage);
         } catch (Exception e) {
             e.printStackTrace();
@@ -233,9 +231,6 @@ public class TeamAction extends ActionSupport implements SessionAware{
         List<TeamDistrict> myTeamList = null;
         try {
             myTeamList = teamService.showMyTeam(uid);
-            for (TeamDistrict district : myTeamList) {
-                System.out.println(district);
-            }
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -41,6 +41,7 @@
 			<result name="published_SUCCESS" type="redirectAction">note_noteUINew.action</result>
 			<result name="noteUI_SUCCESS" type="dispatcher">/jsp/upperclassmanNote.jsp</result>
 			<result name="click_SUCCESS" type="redirectAction">note_noteUINew.action</result>
+			<result name="delete_SUCCESS" type="redirectAction">note_noteUINew.action</result>
 			<result name="alter_SUCCESS" type="redirectAction">note_noteUINew.action</result>
 		</action>
 	</package>

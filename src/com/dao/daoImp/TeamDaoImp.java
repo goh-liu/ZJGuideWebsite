@@ -116,7 +116,7 @@ public class TeamDaoImp extends HibernateDaoSupport implements TeamDao {
         for (TeamMember teamMember : teamMemberList1) {
             teamMemberList.add(teamMember);
         }
-
+        //返回举报消息
         String hql2 = "select new TeamToreport(toreportId,teamId,toreportText) from TeamToreport t where t.teamCaptainUid = ? and t.isRead = 'false'";
         List<TeamToreport> teamToreportList = (List<TeamToreport>) this.getHibernateTemplate().find(hql2, uid);
         myMessageMap.put("teamMemberList",teamMemberList);
@@ -184,7 +184,7 @@ public class TeamDaoImp extends HibernateDaoSupport implements TeamDao {
      */
     @Override
     public List<TeamDistrict> showMyTeam(String uid) throws Exception {
-        String hql = "select new TeamMember(teamId) from TeamMember t where t.teamMemberUid = ? order by t.joinTime desc ";
+        String hql = "select new TeamMember(teamId) from TeamMember t where t.teamMemberUid = ? and consentJoin = 'true' order by t.joinTime desc ";
         List<TeamMember> list = (List<TeamMember>) this.getHibernateTemplate().find(hql, uid);
         //根据队伍ID显示队伍的详细信息
         String myTeamIds = null;
@@ -197,9 +197,6 @@ public class TeamDaoImp extends HibernateDaoSupport implements TeamDao {
         }
         String hql1 = "select new TeamDistrict(counter,teamId,teamName,teamType) from TeamDistrict t where t.teamId in("+myTeamIds+")";
         List<TeamDistrict> myTeamList = (List<TeamDistrict>) this.getHibernateTemplate().find(hql1);
-
-
-
         return myTeamList;
     }
 

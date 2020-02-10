@@ -3,26 +3,16 @@ package com.web.action;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.domain.*;
-import com.mchange.lang.ShortUtils;
-import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.service.AnonService;
 import com.utils.UUIDUtils;
 import com.utils.UploadUtils;
-import org.apache.commons.fileupload.FileItem;
-import org.apache.commons.fileupload.disk.DiskFileItemFactory;
-import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.commons.io.IOUtils;
 import org.apache.struts2.ServletActionContext;
-import org.aspectj.util.FileUtil;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 /**
  * @autor goh_liu
@@ -80,7 +70,6 @@ public class AnonAction extends ActionSupport {
      *   跳转到匿名友人板块
      */
     public String anonUI() {
-        ServletActionContext.getRequest().getSession().removeAttribute("oneAnonMap");
         PageModel pageModel = null;
         try {
             pageModel = anonService.showAnonWithPage(1);
@@ -335,7 +324,6 @@ public class AnonAction extends ActionSupport {
     public String readMessage() {
         HttpServletRequest req = ServletActionContext.getRequest();
         String counter = req.getParameter("counter");
-        System.out.println("counter======"+counter);
         try {
             anonService.readMessage(counter);
         } catch (Exception e) {

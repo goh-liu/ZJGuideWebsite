@@ -80,11 +80,11 @@ function showMyNote() {
 function showMyNoteDetails(noteId) {
    $.post("/ZJGuideWebsite_war_exploded/note_showOne_JSON.action",{noteId:noteId},function (data,status) {
        $('.OneNoteDetails-body').html(data.note);
-       var onclickURL = "window.location.href='/ZJGuideWebsite_war_exploded/note_deleteNote.action?noteId="+noteId+"'";
+       var onclickURL = "deleteNote('"+noteId+"')";
        var usefulCoun = "有用("+data.usefulCoun+")";
        var objectionCoun = "提出异议("+data.objectionCoun+")";
        var toreportCoun = "举报("+data.toreportCoun+")";
-       var alterURL = "alterNote('"+noteId+"')"
+       var alterURL = "alterNote('"+noteId+"')";
 
        $('.OneNoteDetails-footer>button:nth-child(1)').attr("onclick",onclickURL);
        $('.OneNoteDetails-footer>button:nth-child(2)').html(usefulCoun);
@@ -92,6 +92,14 @@ function showMyNoteDetails(noteId) {
        $('.OneNoteDetails-footer>button:nth-child(4)').html(toreportCoun);
        $('.OneNoteDetails-footer>button:nth-child(5)').attr("onclick",alterURL);
    })
+}
+
+function deleteNote(noteId) {
+    let returnVal = window.confirm("是否要删除该条寄语？", "删除");
+    if(returnVal){
+        let postUrl = "/ZJGuideWebsite_war_exploded/note_deleteNote.action?noteId="+noteId;
+        $.post(postUrl);
+    }
 }
 
 //显示我的信息
@@ -145,7 +153,7 @@ function showMyMessages() {
 //查看寄语的详情和修改读的情况,uid是发送这条消息的人的ID
 function showDetailsAndchangeIsRead(noteId,databaseTable,uid) {
     showMyNoteDetails(noteId);
-    var url = "/ZJGuideWebsite_war_exploded/note_changeIsRead.action?noteId=" +noteId+"&databaseTable="+databaseTable+"&uid="+uid;
+    let url = "/ZJGuideWebsite_war_exploded/note_changeIsRead.action?noteId=" +noteId+"&databaseTable="+databaseTable+"&uid="+uid;
     $.post(url);
 }
 
@@ -158,7 +166,7 @@ function alterNote(noteId) {
     $('#myTabContent>#publish').addClass('active in');
     $('#myTabContent>#publish').siblings().removeClass('active in');
     //将要修改的内容写入编写寄语框中
-    var note = $('.OneNoteDetails-body').html().replace(/^\s*|\s*$/g,"");
+    let note = $('.OneNoteDetails-body').html().replace(/^\s*|\s*$/g,"");
     $('#alterThisNote').val(note);
     $('#alterThisNoteButton').html("确认修改");
     console.log(noteId);

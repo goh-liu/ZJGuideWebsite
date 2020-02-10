@@ -35,7 +35,28 @@ public class PageModel {
         private String url;
 
 
-        //要想使用我的分页，必须给我两个参数。一个是要看哪一页，另一个是总记录条数
+    @Override
+    public String toString() {
+        return "PageModel{" +
+                "currentPageNum=" + currentPageNum +
+                ", pageSize=" + pageSize +
+                ", totalRecords=" + totalRecords +
+                ", totalPageNum=" + totalPageNum +
+                ", startIndex=" + startIndex +
+                ", prePageNum=" + prePageNum +
+                ", nextPageNum=" + nextPageNum +
+                ", map=" + map +
+                ", list=" + list +
+                ", ClickMarkList1=" + ClickMarkList1 +
+                ", ClickMarkList2=" + ClickMarkList2 +
+                ", ClickMarkList3=" + ClickMarkList3 +
+                ", startPage=" + startPage +
+                ", endPage=" + endPage +
+                ", url='" + url + '\'' +
+                '}';
+    }
+
+    //要想使用我的分页，必须给我两个参数。一个是要看哪一页，另一个是总记录条数
         public PageModel(int currentPageNum,int totalRecords,int pageSize){
             this.currentPageNum = currentPageNum;
             this.totalRecords = totalRecords;

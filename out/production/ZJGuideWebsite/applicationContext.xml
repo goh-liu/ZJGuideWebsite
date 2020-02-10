@@ -50,7 +50,7 @@
 				<value>com/domain/NoteToreport.hbm.xml</value>
 				<value>com/domain/UserIdAndName.hbm.xml</value>
 				<value>com/domain/TeamDistrict.hbm.xml</value>
-				<value>com/domain/teamMenber.hbm.xml</value>
+				<value>com/domain/teamMember.hbm.xml</value>
 				<value>com/domain/TeamToreport.hbm.xml</value>
 				<value>com/domain/TeamIdAndName.hbm.xml</value>
 			</list>

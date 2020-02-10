@@ -25,15 +25,14 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="${pageContext.request.contextPath}/admin_adminUI_UI.action">管理后台</a></li>
                     <li><a href="#" data-toggle="modal" data-target="#loginAdmin">管理后台</a></li>
+                    <li><a href="${pageContext.request.contextPath}/anon_anonUI.action">匿名说说</a></li>
                     <li><a href="${pageContext.request.contextPath}/note_noteUINew.action" >学长寄语</a></li>
                     <li><a href="${pageContext.request.contextPath}/team_commonGoal.action">志同道合</a></li>
-                    <li><a href="${pageContext.request.contextPath}/anon_anonUI.action">匿名友人</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <c:if test="${empty loginUser}">
-                        <li><a href="${pageContext.request.contextPath}/user_loginUI.action" class="btn">登陆</a></li>
+                        <li><a href="${pageContext.request.contextPath}/user_loginUI.action" class="btn">登录</a></li>
                         <li><a href="${pageContext.request.contextPath}/user_registerUI.action" class="btn" >注册</a></li>
                     </c:if>
                     <c:if test="${not empty loginUser}">
@@ -45,13 +44,13 @@
         </div><!-- /.container-fluid -->
     </nav>
 
-<%--弹出管理后台登陆界面--%>
+<%--弹出管理后台登录界面--%>
 <div class="modal fade" id="loginAdmin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">登陆管理后台</h4>
+                <h4 class="modal-title" id="myModalLabel">登录管理后台</h4>
             </div>
             <div class="modal-body">
                 <form class="form-horizontal" id="loginAdminForm"
@@ -90,7 +89,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                <button type="submit" class="btn btn-primary" form="loginAdminForm">登陆</button>
+                <button type="submit" class="btn btn-primary" form="loginAdminForm">登录</button>
             </div>
         </div>
     </div>

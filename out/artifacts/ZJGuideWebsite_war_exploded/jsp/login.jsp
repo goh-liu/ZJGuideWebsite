@@ -103,7 +103,7 @@
                 </div>
 
                 <div class="modal-footer">
-                    <a href="${pageContext.request.contextPath}/UserServlet?method=indexUI"  class="btn btn-default" >返回首页</a>
+                    <a href="${pageContext.request.contextPath}/anon_anonUI.action"  class="btn btn-default" >返回首页</a>
                     <button type="submit" form="loginForm" id="loginButton"
                           class="btn btn-primary">&ensp;登&ensp;陆&ensp;</button>
                 </div>

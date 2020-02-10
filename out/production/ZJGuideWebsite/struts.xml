@@ -7,7 +7,7 @@
 	<!-- 配置Struts2的常量 -->
 	<constant name="struts.action.extension" value="action"/>
 
-	<!--上传图片到Struts2时出现问题的解决-->
+	<!--上传图片到Struts2时出现大小限制问题的解决-->
 	<constant name="struts.multipart.maxSize" value="100000000"></constant>
 
 
@@ -41,6 +41,7 @@
 			<result name="published_SUCCESS" type="redirectAction">note_noteUINew.action</result>
 			<result name="noteUI_SUCCESS" type="dispatcher">/jsp/upperclassmanNote.jsp</result>
 			<result name="click_SUCCESS" type="redirectAction">note_noteUINew.action</result>
+			<result name="delete_SUCCESS" type="redirectAction">note_noteUINew.action</result>
 			<result name="alter_SUCCESS" type="redirectAction">note_noteUINew.action</result>
 		</action>
 	</package>

@@ -25,7 +25,7 @@
                 <h2 class="modal-title" style="display: inline;">注册</h2>
                 <div  class=" col-sm-offset-9"  style="display: inline;">
                     已有账号?
-                    <a href="${pageContext.request.contextPath}/UserServlet?method=loginUI">点此登陆</a>
+                    <a href="${pageContext.request.contextPath}/user_loginUI.action">点此登陆</a>
                 </div>
             </div>
         </div>
@@ -135,7 +135,7 @@
             </div>
         </div>
         <div class="modal-footer">
-            <a href="${pageContext.request.contextPath}"  class="btn btn-default">返回首页</a>
+            <a href="${pageContext.request.contextPath}/anon_anonUI.action"  class="btn btn-default">返回首页</a>
             <button type="submit" form="registerForm" id="registerButton"
                     class="btn btn-primary">&ensp;注&ensp;册&ensp;</button>
         </div>

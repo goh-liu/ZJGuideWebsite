@@ -273,7 +273,7 @@ public class NoteAction extends ActionSupport implements SessionAware,ModelDrive
             e.printStackTrace();
         }
         ServletActionContext.getRequest().getSession().setAttribute("popupMessage","删除成功");
-        return "noteUI_SUCCESS";
+        return "delete_SUCCESS";
     }
 
     /**
@@ -309,12 +309,10 @@ public class NoteAction extends ActionSupport implements SessionAware,ModelDrive
      * @return
      */
     public String changeIsRead(){
-        System.out.println(noteDistrict);
         String databaseTable = ServletActionContext.getRequest().getParameter("databaseTable");
         String sourceUid = ServletActionContext.getRequest().getParameter("uid");
         System.out.println(databaseTable);
         String tableKey = MD5Utils.md5(noteDistrict.getNoteId() + sourceUid);
-        System.out.println("--------------------------"+tableKey);
         try {
             noteService.changeIsRead(tableKey,databaseTable);
         } catch (Exception e) {
