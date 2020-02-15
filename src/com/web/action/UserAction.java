@@ -173,7 +173,7 @@ public class UserAction extends ActionSupport {
         }
         try {
             //登录成功, service处理
-            User user = userService.userLogin(uname,upassword);
+            UserIdAndName user = userService.userLogin(uname,upassword);
             //记录登陆用户的信息，存放在loginUser中
             req.getSession().setAttribute("loginUser",user);
             //该cookie-->autoLogining：防止自动登陆的功能在一次会话中多次执行

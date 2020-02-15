@@ -11,10 +11,10 @@ import com.utils.MD5Utils;
 import com.utils.UUIDUtils;
 import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.interceptor.SessionAware;
-
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -92,8 +92,13 @@ public class NoteAction extends ActionSupport implements SessionAware,ModelDrive
      * @return
      */
     public String published() {
+        //新生不允许发表
+        int currYear = Calendar.getInstance().get(Calendar.YEAR);
+        if(loginuser.getUgrade() == currYear){
+            ServletActionContext.getRequest().getSession().setAttribute("popupMessage","您是新生，不允许发表！！");
+            return "published_SUCCESS";
+        }
         //生成寄语的noteId,hibernate会自动生成
-        //noteDistrict.setNoteId(UUIDUtils.getId());
         //获取当前登录用户的UID
         noteDistrict.setUid(loginuser.getUid());
         //生成该寄语的发表时间

@@ -49,7 +49,7 @@ public class AnonDaoImp extends HibernateDaoSupport implements AnonDao {
      */
     @Override
     public int findTotalRecords() throws Exception {
-        String hql = "select count(*) from AnonDistrict";
+        String hql = "select count(*) from AnonDistrict where status = 1";
         List counList = this.getHibernateTemplate().find(hql);
         Long num = (Long)counList.get(0);
         return num.intValue();

@@ -64,11 +64,13 @@
                                 <form class="form-horizontal" id="ucmNForm"  method="post" enctype="multipart/form-data"
                                       action="${pageContext.request.contextPath}/note_published.action">
                                     <div class=form-group" >
-                                        <textarea class="form-control" id="alterThisNote" name="note" rows="19" placeholder="请在此处输入您要对师弟师妹说的话"></textarea>
+                                        <textarea class="form-control" id="alterThisNote" name="note" rows="19"
+                                                  placeholder="请在此处输入您要对师弟师妹说的话"></textarea>
                                     </div>
                                 </form>
                             </div>
                         </div>
+
                         <div class="tab-pane fade" id="myNote">
                             <div class="myNote">
                                 <span>您尚未有发表过哦</span>
@@ -233,10 +235,18 @@
 </html>
 <script>
     //弹窗，显示action返回的信息
-    var popupMessage=""+'${popupMessage}';
+    let popupMessage=""+'${popupMessage}';
     if (popupMessage != ""){
         alert(popupMessage);
         <%session.setAttribute("popupMessage","");%>
+    }
+
+    //新生无法编写寄语
+    let year = new Date().getFullYear();
+    if (year == ${loginUser.ugrade}){
+       $('#alterThisNote').attr('placeholder','新生不能编写寄语');
+       $('#alterThisNote').attr('disabled','disabled');
+       $('#alterThisNoteButton').attr('disabled','disabled');
     }
 
 </script>

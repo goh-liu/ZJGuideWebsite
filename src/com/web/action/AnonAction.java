@@ -5,10 +5,13 @@ import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.domain.*;
 import com.opensymphony.xwork2.ActionSupport;
 import com.service.AnonService;
+import com.utils.JeditUtils;
 import com.utils.UUIDUtils;
 import com.utils.UploadUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.struts2.ServletActionContext;
+import redis.clients.jedis.Jedis;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
@@ -70,13 +73,14 @@ public class AnonAction extends ActionSupport {
      *   跳转到匿名友人板块
      */
     public String anonUI() {
-        PageModel pageModel = null;
-        try {
-            pageModel = anonService.showAnonWithPage(1);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        ServletActionContext.getRequest().getSession().setAttribute("page",pageModel);
+        //更新redis中前三分页的数据
+        //updateRedisAnonPage();
+
+        //从redis中获取第一页的数据
+        Jedis jedis = JeditUtils.getJedis();
+        String anonPage1 = jedis.get("anonPage1");
+        //将第一页的数据保存到session中
+        ServletActionContext.getRequest().getSession().setAttribute("page",JSON.parseObject(anonPage1));
         return "anonUI";
     }
 
@@ -104,8 +108,6 @@ public class AnonAction extends ActionSupport {
                 //获取到原始的文件名称,若没有，直接跳出本次循环
                 String oldFileName = uploadFileFileName.get(i);
                 i++;
-                System.out.println("--------------");
-                System.out.println("oldFileName"+oldFileName);
                 if(null == oldFileName||"".equals(oldFileName)){
                     break;
                 }
@@ -149,6 +151,8 @@ public class AnonAction extends ActionSupport {
             e.printStackTrace();
             req.setAttribute("popupMessage","发表失败！！！");
         }
+        //发表匿名说说后，更新redis中最新的三页数据
+        showAnonWithPage();
         return "anonUIAction";
     }
 
@@ -159,14 +163,40 @@ public class AnonAction extends ActionSupport {
     public String showAnonWithPage() {
         HttpServletRequest req = ServletActionContext.getRequest();
         int curNum=Integer.parseInt(req.getParameter("num"));
-        PageModel pageModel = null;
+        if (curNum <= 3){
+            //如果用户获取的是前三页，则从redis中获取
+            //从redis中获取第curNum页的数据
+            Jedis jedis = JeditUtils.getJedis();
+            String redisKey = "anonPage"+curNum;
+            String anonPage = jedis.get(redisKey);
+            req.getSession().setAttribute("page",JSON.parseObject(anonPage));
+        }else {
+            //用户获取的是非前3页，从数据库中获取
+            PageModel pageModel = null;
+            try {
+                pageModel = anonService.showAnonWithPage(curNum);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            req.getSession().setAttribute("page",pageModel);
+        }
+        return "anonUI";
+    }
+
+    /**
+     * 更新redis中匿名说说的前三页
+     */
+    public void updateRedisAnonPage(){
         try {
-            pageModel = anonService.showAnonWithPage(curNum);
+            for (int i = 1; i < 4; i++) {
+                PageModel pageModel = anonService.showAnonWithPage(i);
+                Jedis jedis = JeditUtils.getJedis();
+                String keyName = "anonPage"+i;
+                jedis.set(keyName,JSON.toJSONString(pageModel));
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        req.getSession().setAttribute("page",pageModel);
-        return "anonUI";
     }
 
     /**
@@ -206,6 +236,8 @@ public class AnonAction extends ActionSupport {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        //写入评论后，更新redis中最新的三页数据
+        showAnonWithPage();
         return "anonUIAction";
     }
 
@@ -224,6 +256,8 @@ public class AnonAction extends ActionSupport {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        //点赞后，更新redis中最新的三页数据
+        showAnonWithPage();
         //将该条匿名说说的点赞人数返回
         returnJSONWithResp(likeCoun);
     }
@@ -243,6 +277,8 @@ public class AnonAction extends ActionSupport {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        //取消点赞后，更新redis中最新的三页数据
+        showAnonWithPage();
         //将该条匿名说说的点赞人数返回
         returnJSONWithResp(likeCoun);
     }
@@ -259,6 +295,8 @@ public class AnonAction extends ActionSupport {
             ServletActionContext.getRequest().getSession().setAttribute("popupMessage","删除失败！！");
             e.printStackTrace();
         }
+        //删除匿名说说后，更新redis中最新的三页数据
+        showAnonWithPage();
         return "anonUIAction";
     }
 

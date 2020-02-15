@@ -28,7 +28,7 @@
 		<action name="anon_*_JSON" class="anonAction" method="{1}">
 		</action>
 		<action name="anon_*" class="anonAction" method="{1}">
-			<result name="anonUI" type="dispatcher">jsp/anonymityFriend.jsp</result>
+			<result name="anonUI" type="dispatcher">/jsp/anonymityFriend.jsp</result>
 			<result name="anonUIAction" type="redirectAction">anon_anonUI.action</result>
 		</action>
 	</package>

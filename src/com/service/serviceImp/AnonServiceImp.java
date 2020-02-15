@@ -55,8 +55,8 @@ public class AnonServiceImp implements AnonService {
         HashMap anonMap = anonDao.showAnonWithPage(pm.getStartIndex(), pm.getPageSize());
         pm.setMap(anonMap);
 
-        //3_关联url,后面的&是为了连接页码
-        pm.setUrl("anon_showAnonWithPage_JSON.action&");
+        //3_关联url,后面的?是为了连接页码
+        pm.setUrl("anon_showAnonWithPage.action?");
         return pm;
     }
 

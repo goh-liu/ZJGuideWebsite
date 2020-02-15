@@ -4,13 +4,9 @@ import com.dao.UserDao;
 import com.domain.User;
 import com.domain.UserIdAndName;
 import com.service.UserService;
-import com.utils.BeanFactory;
-import com.utils.JeditUtils;
-import org.hibernate.annotations.Source;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import redis.clients.jedis.Jedis;
+
 
 import javax.annotation.Resource;
 
@@ -33,10 +29,6 @@ public class UserServiceImp implements UserService {
     @Override
     public void userRegister(User user) throws Exception {
         userDao.userRegister(user);
-        //将该新用户的用户ID和用户名存放在redis数据库中
-        Jedis jedis = JeditUtils.getJedis();
-        jedis.set(user.getUid(),user.getUname());
-        JeditUtils.closeJedis(jedis);
     }
 
     /**
@@ -47,8 +39,8 @@ public class UserServiceImp implements UserService {
      * @throws Exception
      */
     @Override
-    public User userLogin(String uname, String upassword) throws Exception {
-        User user = userDao.userLogin(uname, upassword);
+    public UserIdAndName userLogin(String uname, String upassword) throws Exception {
+        UserIdAndName user = userDao.userLogin(uname, upassword);
         if(null == user){
             throw new RuntimeException("用户名/密码错误,请重新登录");
         }else{

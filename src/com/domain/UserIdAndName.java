@@ -7,6 +7,7 @@ package com.domain;
 public class UserIdAndName {
     private String uid;
     private String uname;
+    private int ugrade;
 
     public String getUid() {
         return uid;
@@ -24,6 +25,14 @@ public class UserIdAndName {
         this.uname = uname;
     }
 
+    public int getUgrade() {
+        return ugrade;
+    }
+
+    public void setUgrade(int ugrade) {
+        this.ugrade = ugrade;
+    }
+
     @Override
     public String toString() {
         return "UserIdAndName{" +
@@ -38,5 +47,11 @@ public class UserIdAndName {
     public UserIdAndName(String uid, String uname) {
         this.uid = uid;
         this.uname = uname;
+    }
+
+    public UserIdAndName(String uid, String uname, int ugrade) {
+        this.uid = uid;
+        this.uname = uname;
+        this.ugrade = ugrade;
     }
 }

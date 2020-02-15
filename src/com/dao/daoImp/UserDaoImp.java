@@ -3,25 +3,9 @@ package com.dao.daoImp;
 import com.dao.UserDao;
 import com.domain.User;
 import com.domain.UserIdAndName;
-import com.utils.JDBCUtils;
-import com.utils.JeditUtils;
-import com.utils.MD5Utils;
-import org.apache.commons.dbutils.DbUtils;
-import org.apache.commons.dbutils.QueryRunner;
-import org.apache.commons.dbutils.handlers.BeanHandler;
-import org.apache.commons.dbutils.handlers.BeanListHandler;
-import org.apache.commons.dbutils.handlers.MapListHandler;
-import org.apache.commons.dbutils.handlers.ScalarHandler;
-import org.springframework.dao.support.DaoSupport;
 import org.springframework.orm.hibernate5.support.HibernateDaoSupport;
-import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
-import redis.clients.jedis.Jedis;
-
-import javax.naming.Name;
 import java.util.List;
-import java.util.Map;
-import java.util.logging.Handler;
+
 
 /**
  * @autor goh_liu
@@ -47,11 +31,11 @@ public class UserDaoImp extends HibernateDaoSupport implements UserDao {
      * @throws Exception
      */
     @Override
-    public User userLogin(String uname, String upassword) throws Exception {
-        User user = null;
-        String hql = "from User u where u.telephone = ? or u.uname = ? and u.upassword = ?";
-        List<User> list = (List<User>) this.getHibernateTemplate().find(hql, uname, uname, upassword);
-        for (User user1 : list) {
+    public UserIdAndName userLogin(String uname, String upassword) throws Exception {
+        UserIdAndName user = null;
+        String hql = "from UserIdAndName where telephone = ? or uname = ? and upassword = ?";
+        List<UserIdAndName> list = (List<UserIdAndName>) this.getHibernateTemplate().find(hql, uname, uname, upassword);
+        for (UserIdAndName user1 : list) {
             user = user1;
         }
        /* User user = null;
@@ -162,20 +146,6 @@ public class UserDaoImp extends HibernateDaoSupport implements UserDao {
         return user;
     }
 
-    /**
-     * 更新redis数据库,如特殊情况，一般不需要用到
-     * @throws Exception
-     */
-    public void updateRedis() throws Exception {
-        QueryRunner queryRunner = new QueryRunner(JDBCUtils.getDataSource());
-        String sql = "select * from user";
-        List<User> users = queryRunner.query(sql, new BeanListHandler<User>(User.class));
-        Jedis jedis = JeditUtils.getJedis();
-        for (User user1 : users) {
-            jedis.set(user1.getUid(),user1.getUname());
-        }
-        JeditUtils.closeJedis(jedis);
-    }
 
 
 }

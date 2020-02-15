@@ -13,7 +13,7 @@
 
         <!-- 建立类中的普通的属性和表的字段的对应 -->
         <property name="uname" column="uname"  />
-
+        <property name="ugrade" column="ugrade" />
 
     </class>
 

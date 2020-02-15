@@ -3,9 +3,11 @@ function saveHotOrNew(hotOrNew) {
     $.cookie('hotOrNew',hotOrNew);
     showHotOrNew(hotOrNew);
 }
+
+
 // 返回按时间还是热门的cookie
 function returnHotOrNew() {
-    var hotOrNew = $.cookie('hotOrNew');
+    let hotOrNew = $.cookie('hotOrNew');
     $.cookie('hotOrNew',null);
     return hotOrNew;
 }
@@ -24,16 +26,16 @@ function showHotOrNew(hotOrNew) {
 }
 // 点击“有用”按钮，进行一系列操作
 function useful_button(that,noteId) {
-    var usefuled = $(that).hasClass('btn-warning');
+    let usefuled = $(that).hasClass('btn-warning');
     $.post("/ZJGuideWebsite_war_exploded/note_clickUseful.action",{noteId:noteId,usefuled:usefuled},function () {
         if (false==usefuled){
             $(that).addClass('btn-warning');
-            var coun = $(that).html().match(/\d+/);
+            let coun = $(that).html().match(/\d+/);
             coun++;
             $(that).html("有用("+coun+")");
         }else {
             $(that).removeClass('btn-warning');
-            var coun = $(that).html().match(/\d+/);
+            let coun = $(that).html().match(/\d+/);
             coun--;
             $(that).html("有用("+coun+")");
         }
@@ -44,14 +46,14 @@ function useful_button(that,noteId) {
 
 // 点击“提出异议”按钮
 function Objection_button(that, noteId) {
-    var note = $(that).parent().prev().children("h3").html().replace(/^\s*|\s*$/g,"");
+    let note = $(that).parent().prev().children("h3").html().replace(/^\s*|\s*$/g,"");
     $('#notePrompt').val(note);
     $('#objectionForm .objectionFormInput').val(noteId);
 }
 
 // 点击“举报”按钮
 function Toreport_button(that, noteId) {
-    var note = $(that).parent().prev().children("h3").html().replace(/^\s*|\s*$/g,"");
+    let note = $(that).parent().prev().children("h3").html().replace(/^\s*|\s*$/g,"");
     $('#notePrompt2').val(note);
     $('#ToreportModal .ToreportFormInput').val(noteId);
 }
@@ -62,9 +64,9 @@ function showMyNote() {
         if(data != null){
             $('.myNote').html("");
         }
-        for (var index in data) {
+        for (let index in data) {
 
-            var oneHtml =
+            let oneHtml =
                 "<a href='#' data-toggle=\"modal\" data-target=\"#showOneNoteDetails\" onclick='showMyNoteDetails(&apos;"+data[index].noteId+"&apos;)'>\n"+
                     "<div class=\"panel panel-default\" title='点击查看寄语的详情'>\n" +
                     "  <div class=\"panel-heading\">"+data[index].publishedTime+"</div>\n" +
@@ -80,11 +82,11 @@ function showMyNote() {
 function showMyNoteDetails(noteId) {
    $.post("/ZJGuideWebsite_war_exploded/note_showOne_JSON.action",{noteId:noteId},function (data,status) {
        $('.OneNoteDetails-body').html(data.note);
-       var onclickURL = "deleteNote('"+noteId+"')";
-       var usefulCoun = "有用("+data.usefulCoun+")";
-       var objectionCoun = "提出异议("+data.objectionCoun+")";
-       var toreportCoun = "举报("+data.toreportCoun+")";
-       var alterURL = "alterNote('"+noteId+"')";
+       let onclickURL = "deleteNote('"+noteId+"')";
+       let usefulCoun = "有用("+data.usefulCoun+")";
+       let objectionCoun = "提出异议("+data.objectionCoun+")";
+       let toreportCoun = "举报("+data.toreportCoun+")";
+       let alterURL = "alterNote('"+noteId+"')";
 
        $('.OneNoteDetails-footer>button:nth-child(1)').attr("onclick",onclickURL);
        $('.OneNoteDetails-footer>button:nth-child(2)').html(usefulCoun);
@@ -94,6 +96,7 @@ function showMyNoteDetails(noteId) {
    })
 }
 
+//删除寄语
 function deleteNote(noteId) {
     let returnVal = window.confirm("是否要删除该条寄语？", "删除");
     if(returnVal){
@@ -109,8 +112,8 @@ function showMyMessages() {
             $('.myMessages').html("");
         }
         //提出异议
-        for (var index in data.noteObjectionList) {
-            var oneHtml =
+        for (let index in data.noteObjectionList) {
+            let oneHtml =
                 "<a href='#' data-toggle=\"modal\" data-target=\"#showOneNoteDetails\"" +
                 "        onclick='showDetailsAndchangeIsRead(&apos;"+data.noteObjectionList[index].noteId+
                          "&apos;,&apos;noteObjection&apos;,&apos;"+data.noteObjectionList[index].uid+"&apos;)'>\n"+
@@ -122,8 +125,8 @@ function showMyMessages() {
             $('.myMessages').append(oneHtml)
         }
         //有用
-        for (var index in data.noteUsefulList) {
-            var oneHtml =
+        for (let index in data.noteUsefulList) {
+            let oneHtml =
                 "<a href='#' data-toggle=\"modal\" data-target=\"#showOneNoteDetails\" " +
                 "       onclick='showDetailsAndchangeIsRead(&apos;"+data.noteUsefulList[index].noteId+
                         "&apos;,&apos;noteUseful&apos;,&apos;"+data.noteUsefulList[index].uid+"&apos;)'>\n"+
@@ -135,8 +138,8 @@ function showMyMessages() {
             $('.myMessages').append(oneHtml)
         }
         //举报
-        for (var index in data.noteToreportList) {
-            var oneHtml =
+        for (let index in data.noteToreportList) {
+            let oneHtml =
                 "<a href='#' data-toggle=\"modal\" data-target=\"#showOneNoteDetails\" " +
                 "       onclick='showDetailsAndchangeIsRead(&apos;"+data.noteToreportList[index].noteId+
                         "&apos;,&apos;noteToreport&apos;,&apos;"+data.noteToreportList[index].uid+"&apos;)'>\n"+
@@ -176,6 +179,6 @@ function alterNote(noteId) {
 
 // // 转化时间戳
 // function time(time = +new Date()) {
-//     var date = new Date(time + 8 * 3600 * 1000); // 增加8小时
+//     let date = new Date(time + 8 * 3600 * 1000); // 增加8小时
 //     return date.toJSON().substr(0, 19).replace('T', ' ');
 // }

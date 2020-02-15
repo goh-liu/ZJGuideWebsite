@@ -9,7 +9,7 @@ import com.domain.UserIdAndName;
  */
 public interface UserService {
 
-    User userLogin(String uname,String upassword) throws Exception;
+    UserIdAndName userLogin(String uname,String upassword) throws Exception;
 
     User autoLogin(String uid) throws Exception;
 
