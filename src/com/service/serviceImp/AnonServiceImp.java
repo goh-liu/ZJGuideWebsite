@@ -92,10 +92,7 @@ public class AnonServiceImp implements AnonService {
     @Override
     public int cancelAnonLike(String anonID, String uid) throws Exception {
         //将点赞的人和点赞的匿名说说保存在anon_like表中
-        AnonLike anonLike = new AnonLike();
-        anonLike.setAnonID(anonID);
-        anonLike.setLikeUID(uid);
-        anonDao.delRecordLike(anonLike);
+        anonDao.delRecordLike(anonID,uid);
         //更新anon_district表的likeCoun列并返回当前likeCoun
         return anonDao.cancelAnonLike(anonID);
     }

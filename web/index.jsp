@@ -17,5 +17,8 @@
   </head>
   <body>
     <%@include file="jsp/header.jsp"%>
+    <div style="width: 100%;height: 99%;margin-top: 53px;padding-left: 35%;padding-top: 10%">
+      <h1>欢迎来到校园论坛系统<br/>您尚未登录，请先登录！！</h1>
+    </div>
   </body>
 </html>

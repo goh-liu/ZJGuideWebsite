@@ -20,7 +20,7 @@
 		<property name="publishedTime" column="publishedTime"/>
 		<property name="status" column="status"/>
         <!-- 配置关联对象 -->
-		<many-to-one name="userIdAndName" class="com.domain.UserIdAndName"
+		<many-to-one name="user" class="com.domain.User"
 					 column="uid" insert="false" update="false" lazy="false" />
 	</class>
 

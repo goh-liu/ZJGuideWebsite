@@ -25,7 +25,7 @@ public interface AnonDao {
 
     void recordLike(AnonLike anonLike ) throws Exception;
 
-    void delRecordLike( AnonLike anonLike ) throws Exception;
+    void delRecordLike(String anonID, String uid) throws Exception;
 
     /**
      * 用户点击删除匿名说说

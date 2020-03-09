@@ -58,7 +58,7 @@
                     <div class="tab-pane fade in active" id="publish">
                         <div>
                             <div>
-                                <h3>创建队伍</h3>
+                                <h4>创建队伍</h4>
                                 <button type="submit" form="troopsForm" class="btn btn-primary ">&ensp;创&ensp;建&ensp;</button>
                             </div>
                             <div class="troopsAdd">

@@ -9,11 +9,11 @@
 <html>
 <head>
     <title>管理后台</title>
-    <!--引入本页面的css文件-->
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/adminUI/css/adminUI.css">
     <!-- 引入element ui样式 -->
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
     <script src="${pageContext.request.contextPath}/js/jquery-3.4.1.min.js"></script>
+    <!--引入本页面的css文件-->
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/adminUI/css/adminUI.css">
 
 </head>
 <body>
@@ -24,7 +24,9 @@
             <div class="enterArea">
                 欢迎登录：<strong>${adminUser.uname}</strong>
                 <div>
-                    <el-link type="danger">退出</el-link>
+                    <el-link type="warning">
+                        <span class="fontBold">退出</span>
+                    </el-link>
                 </div>
             </div>
         </div>
@@ -40,46 +42,46 @@
                 <el-submenu index="1">
                     <template slot="title">
                         <i class="el-icon-menu"></i>
-                        <span>匿名友人</span>
+                        <span class="fontBold">匿名说说</span>
                     </template>
                     <el-menu-item-group>
-                        <el-menu-item index="1-1">查看说说</el-menu-item>
-                        <el-menu-item index="1-2">查看热门</el-menu-item>
-                        <el-menu-item index="1-3">查看评论</el-menu-item>
+                        <el-menu-item index="1-1" class="fontBold">查看说说</el-menu-item>
+                        <el-menu-item index="1-2" class="fontBold">查看热门</el-menu-item>
+                        <el-menu-item index="1-3" class="fontBold">查看评论</el-menu-item>
                     </el-menu-item-group>
                 </el-submenu>
                 <el-submenu index="2">
                     <template slot="title">
                         <i class="el-icon-menu"></i>
-                        <span>学长寄语</span>
+                        <span class="fontBold">学长寄语</span>
                     </template>
                     <el-menu-item-group>
-                        <el-menu-item index="2-1">查看寄语</el-menu-item>
-                        <el-menu-item index="2-2">查看热门</el-menu-item>
-                        <el-menu-item index="2-3">查看异议</el-menu-item>
-                        <el-menu-item index="2-4">查看举报</el-menu-item>
+                        <el-menu-item index="2-1" class="fontBold">查看寄语</el-menu-item>
+                        <el-menu-item index="2-2" class="fontBold">查看热门</el-menu-item>
+                        <el-menu-item index="2-3" class="fontBold">查看异议</el-menu-item>
+                        <el-menu-item index="2-4" class="fontBold">查看举报</el-menu-item>
                     </el-menu-item-group>
                 </el-submenu>
                 <el-submenu index="3">
                     <template slot="title">
                         <i class="el-icon-menu"></i>
-                        <span>志同道合</span>
+                        <span class="fontBold">志同道合</span>
                     </template>
                     <el-menu-item-group>
-                        <el-menu-item index="3-1">查看队伍</el-menu-item>
-                        <el-menu-item index="3-2">查看队员</el-menu-item>
-                        <el-menu-item index="3-3">查看举报</el-menu-item>
-                        <el-menu-item index="3-4">已满队伍</el-menu-item>
+                        <el-menu-item index="3-1" class="fontBold">查看队伍</el-menu-item>
+                        <el-menu-item index="3-2" class="fontBold">查看队员</el-menu-item>
+                        <el-menu-item index="3-3" class="fontBold">查看举报</el-menu-item>
+                        <el-menu-item index="3-4" class="fontBold">已满队伍</el-menu-item>
                     </el-menu-item-group>
                 </el-submenu>
                 <el-submenu index="4">
                     <template slot="title">
                         <i class="el-icon-menu"></i>
-                        <span>用户管理</span>
+                        <span class="fontBold">用户管理</span>
                     </template>
                     <el-menu-item-group>
-                        <el-menu-item index="4-1">普通用户</el-menu-item>
-                        <el-menu-item index="4-2">管理用户</el-menu-item>
+                        <el-menu-item index="4-1" class="fontBold">普通用户</el-menu-item>
+                        <el-menu-item index="4-2" class="fontBold">管理用户</el-menu-item>
                     </el-menu-item-group>
                 </el-submenu>
 
@@ -89,8 +91,8 @@
         <div class="primaryShow">
             <div class="bread">
                 <el-breadcrumb separator-class="el-icon-arrow-right">
-                    <el-breadcrumb-item class="breadcrumbTitle1" >{{crumbsTitle1}}</el-breadcrumb-item>
-                    <el-breadcrumb-item class="breadcrumbTitle2" >{{crumbsTitle2}}</el-breadcrumb-item>
+                    <el-breadcrumb-item class="breadcrumbTitle1 fontBold" >{{crumbsTitle1}}</el-breadcrumb-item>
+                    <el-breadcrumb-item class="breadcrumbTitle2"><span class="fontBold">{{crumbsTitle2}}</span></el-breadcrumb-item>
                 </el-breadcrumb>
             </div>
             <div class="showPanel1">
@@ -116,8 +118,8 @@
                         <template slot-scope="scope">
                             <el-button
                                     @click.native.prevent="deleteRow(scope.$index, tableData)"
-                                    type="text"
-                                    size="small">
+                                    type="danger"
+                                    round>
                                 删除
                             </el-button>
                         </template>

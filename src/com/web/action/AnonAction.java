@@ -152,7 +152,7 @@ public class AnonAction extends ActionSupport {
             req.setAttribute("popupMessage","发表失败！！！");
         }
         //发表匿名说说后，更新redis中最新的三页数据
-        showAnonWithPage();
+        updateRedisAnonPage();
         return "anonUIAction";
     }
 
@@ -237,7 +237,7 @@ public class AnonAction extends ActionSupport {
             e.printStackTrace();
         }
         //写入评论后，更新redis中最新的三页数据
-        showAnonWithPage();
+        updateRedisAnonPage();
         return "anonUIAction";
     }
 
@@ -257,7 +257,7 @@ public class AnonAction extends ActionSupport {
             e.printStackTrace();
         }
         //点赞后，更新redis中最新的三页数据
-        showAnonWithPage();
+        updateRedisAnonPage();
         //将该条匿名说说的点赞人数返回
         returnJSONWithResp(likeCoun);
     }
@@ -278,7 +278,7 @@ public class AnonAction extends ActionSupport {
             e.printStackTrace();
         }
         //取消点赞后，更新redis中最新的三页数据
-        showAnonWithPage();
+        updateRedisAnonPage();
         //将该条匿名说说的点赞人数返回
         returnJSONWithResp(likeCoun);
     }
@@ -296,7 +296,7 @@ public class AnonAction extends ActionSupport {
             e.printStackTrace();
         }
         //删除匿名说说后，更新redis中最新的三页数据
-        showAnonWithPage();
+        updateRedisAnonPage();
         return "anonUIAction";
     }
 

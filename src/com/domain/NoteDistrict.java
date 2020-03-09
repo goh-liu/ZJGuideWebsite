@@ -15,7 +15,7 @@ public class NoteDistrict {
     private int toreportCoun;
     private Date publishedTime;
     private int status;
-    private UserIdAndName userIdAndName;
+    private User user;
 
     public NoteDistrict() {
     }
@@ -30,7 +30,7 @@ public class NoteDistrict {
         this.publishedTime = publishedTime;
     }
 
-    public NoteDistrict(String noteId, String uid, String note, int usefulCoun, int objectionCoun, int toreportCoun, Date publishedTime, int status, UserIdAndName userIdAndName) {
+    public NoteDistrict(String noteId, String uid, String note, int usefulCoun, int objectionCoun, int toreportCoun, Date publishedTime, int status, User user) {
         this.noteId = noteId;
         this.uid = uid;
         this.note = note;
@@ -39,7 +39,7 @@ public class NoteDistrict {
         this.toreportCoun = toreportCoun;
         this.publishedTime = publishedTime;
         this.status = status;
-        this.userIdAndName = userIdAndName;
+        this.user = user;
     }
 
     public String getNoteId() {
@@ -106,12 +106,13 @@ public class NoteDistrict {
         this.status = status;
     }
 
-    public UserIdAndName getUserIdAndName() {
-        return userIdAndName;
+    public User getUser() {
+        return user;
     }
 
-    public void setUserIdAndName(UserIdAndName userIdAndName) {
-        this.userIdAndName = userIdAndName;
+    public void setUser(User user) {
+        User user1 = new User(user.getUid(),user.getUname(),user.getSex(),user.getUgrade());
+        this.user = user1;
     }
 
     @Override
@@ -125,7 +126,7 @@ public class NoteDistrict {
                 ", toreportCoun=" + toreportCoun +
                 ", publishedTime=" + publishedTime +
                 ", status=" + status +
-                ", userIdAndName=" + userIdAndName +
+                ", user=" + user +
                 '}';
     }
 }

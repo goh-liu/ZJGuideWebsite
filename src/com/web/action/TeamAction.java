@@ -68,7 +68,7 @@ public class TeamAction extends ActionSupport implements SessionAware{
      * @return
      */
     public String createTeam(){
-        //完善队伍的其他信息
+        //完善队伍的其他信息，其他的会自动封装
         teamDistrict.setTeamId(UUIDUtils.getId());
         teamDistrict.setUid(loginuser.getUid());
         teamDistrict.setCurrPeopleNum(1);

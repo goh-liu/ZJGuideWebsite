@@ -3,7 +3,6 @@ package com.web.action;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.domain.User;
-import com.domain.UserIdAndName;
 import com.opensymphony.xwork2.ActionSupport;
 import com.service.UserService;
 import com.utils.CookieUtils;
@@ -17,7 +16,6 @@ import net.sf.json.JSONObject;
 import org.apache.struts2.ServletActionContext;
 import org.springframework.stereotype.Controller;
 import redis.clients.jedis.Jedis;
-
 import javax.annotation.Resource;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -173,7 +171,7 @@ public class UserAction extends ActionSupport {
         }
         try {
             //登录成功, service处理
-            UserIdAndName user = userService.userLogin(uname,upassword);
+            User user = userService.userLogin(uname,upassword);
             //记录登陆用户的信息，存放在loginUser中
             req.getSession().setAttribute("loginUser",user);
             //该cookie-->autoLogining：防止自动登陆的功能在一次会话中多次执行
@@ -282,9 +280,9 @@ public class UserAction extends ActionSupport {
             return "anonUI";
         }
         try {
-            UserIdAndName userIdAndName = userService.adminLogin(uname, upassword);
+            User user = userService.adminLogin(uname, upassword);
             //记录登陆用户的信息，存放在loginUser中
-            req.getSession().setAttribute("adminUser",userIdAndName);
+            req.getSession().setAttribute("adminUser",user);
         } catch (Exception e) {
             e.printStackTrace();
         }

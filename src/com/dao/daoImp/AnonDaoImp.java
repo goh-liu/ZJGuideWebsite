@@ -166,8 +166,12 @@ public class AnonDaoImp extends HibernateDaoSupport implements AnonDao {
      * @throws Exception
      */
     @Override
-    public void delRecordLike( AnonLike anonLike ) throws Exception {
-       this.getHibernateTemplate().delete(anonLike);
+    public void delRecordLike(String anonID, String uid) throws Exception {
+        String hql = "from AnonLike where anonID = ? and likeUID = ?";
+        List<AnonLike> anonLikes = (List<AnonLike>) this.getHibernateTemplate().find(hql, anonID, uid);
+        for (AnonLike anonLike : anonLikes) {
+            this.getHibernateTemplate().delete(anonLike);
+        }
     }
 
     /**

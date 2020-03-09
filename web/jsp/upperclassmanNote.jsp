@@ -58,7 +58,7 @@
                         <div class="tab-pane fade in active" id="publish">
                             <div>
                                 <div>
-                                    <h3>编写寄语的内容</h3>
+                                    <h4 class="titleText">编写寄语的内容</h4>
                                     <button type="submit" form="ucmNForm" id="alterThisNoteButton" class="btn btn-primary ">&ensp;提&ensp;交&ensp;</button>
                                 </div>
                                 <form class="form-horizontal" id="ucmNForm"  method="post" enctype="multipart/form-data"
@@ -99,7 +99,7 @@
                     <div class="oneNoteLeft">
                         <div>
                             <img class="headImg" src="${pageContext.request.contextPath}/image/headimg2.jpg">
-                            <h5>2016级_${ac.userIdAndName.uname}</h5>
+                            <h5>${ac.user.ugrade}级_${ac.user.uname}</h5>
                         </div>
                     </div>
                     <div class="oneNoteRight row">

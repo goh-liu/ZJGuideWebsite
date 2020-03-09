@@ -39,8 +39,8 @@ public class UserServiceImp implements UserService {
      * @throws Exception
      */
     @Override
-    public UserIdAndName userLogin(String uname, String upassword) throws Exception {
-        UserIdAndName user = userDao.userLogin(uname, upassword);
+    public User userLogin(String uname, String upassword) throws Exception {
+        User user = userDao.userLogin(uname, upassword);
         if(null == user){
             throw new RuntimeException("用户名/密码错误,请重新登录");
         }else{
@@ -89,7 +89,7 @@ public class UserServiceImp implements UserService {
      * @throws Exception
      */
     @Override
-    public UserIdAndName adminLogin(String uname, String upassword) throws Exception {
+    public User adminLogin(String uname, String upassword) throws Exception {
         return userDao.adminLogin(uname, upassword);
 
     }

@@ -10,7 +10,7 @@ import com.domain.UserIdAndName;
  * @date 2019/7/30 - 23:38
  */
 public interface UserDao {
-    UserIdAndName userLogin(String uname, String upassword) throws Exception;
+    User userLogin(String uname, String upassword) throws Exception;
 
     User findUserByID(String uid) throws Exception;
 
@@ -26,5 +26,5 @@ public interface UserDao {
      * @param upassword
      * @throws Exception
      */
-    UserIdAndName adminLogin(String uname, String upassword) throws Exception;
+    User adminLogin(String uname, String upassword) throws Exception;
 }

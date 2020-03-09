@@ -9,7 +9,7 @@ import com.domain.UserIdAndName;
  */
 public interface UserService {
 
-    UserIdAndName userLogin(String uname,String upassword) throws Exception;
+    User userLogin(String uname,String upassword) throws Exception;
 
     User autoLogin(String uid) throws Exception;
 
@@ -19,5 +19,5 @@ public interface UserService {
 
     void findpassword(String telephone,String newpassword) throws Exception;
 
-    UserIdAndName adminLogin(String uname, String upassword) throws Exception;
+    User adminLogin(String uname, String upassword) throws Exception;
 }

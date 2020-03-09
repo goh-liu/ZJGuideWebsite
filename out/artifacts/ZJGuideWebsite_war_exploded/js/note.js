@@ -171,6 +171,7 @@ function alterNote(noteId) {
     //将要修改的内容写入编写寄语框中
     let note = $('.OneNoteDetails-body').html().replace(/^\s*|\s*$/g,"");
     $('#alterThisNote').val(note);
+    $('.titleText').html("修改寄语");
     $('#alterThisNoteButton').html("确认修改");
     console.log(noteId);
     $('#ucmNForm').attr("action","/ZJGuideWebsite_war_exploded/note_alterNote.action?noteId="+noteId);

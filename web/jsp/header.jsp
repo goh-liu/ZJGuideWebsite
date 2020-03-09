@@ -99,8 +99,8 @@
     $(function () {
         if (${empty loginUser}) {
             //用户尚未登录
-            var flag1 = $.isEmptyObject($.cookie('autoLogin'));
-            var flag2 = $.isEmptyObject($.cookie('autoLogining'));
+            let flag1 = $.isEmptyObject($.cookie('autoLogin'));
+            let flag2 = $.isEmptyObject($.cookie('autoLogining'));
             if (!flag1 && flag2) {
                 //有自动登录的用户
                 window.location.href='${pageContext.request.contextPath}/user_autoLogin.action';

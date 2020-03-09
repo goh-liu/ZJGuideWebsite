@@ -130,6 +130,13 @@ public class User {
         this.status = status;
     }
 
+    public User(String uid, String uname, String sex, int ugrade) {
+        this.uid = uid;
+        this.uname = uname;
+        this.sex = sex;
+        this.ugrade = ugrade;
+    }
+
     public User(String uid, String uname, String upassword, String sex, String telephone, String school, String secondarySchool, int ugrade, String uclass, int status) {
         this.uid = uid;
         this.uname = uname;

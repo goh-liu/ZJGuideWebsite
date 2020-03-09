@@ -31,11 +31,11 @@ public class UserDaoImp extends HibernateDaoSupport implements UserDao {
      * @throws Exception
      */
     @Override
-    public UserIdAndName userLogin(String uname, String upassword) throws Exception {
-        UserIdAndName user = null;
-        String hql = "from UserIdAndName where telephone = ? or uname = ? and upassword = ?";
-        List<UserIdAndName> list = (List<UserIdAndName>) this.getHibernateTemplate().find(hql, uname, uname, upassword);
-        for (UserIdAndName user1 : list) {
+    public User userLogin(String uname, String upassword) throws Exception {
+        User user = null;
+        String hql = "select new User(uid,uname,sex,ugrade) from User where telephone = ? or uname = ? and upassword = ?";
+        List<User> list = (List<User>) this.getHibernateTemplate().find(hql, uname, uname, upassword);
+        for (User user1 : list) {
             user = user1;
         }
        /* User user = null;
@@ -136,11 +136,11 @@ public class UserDaoImp extends HibernateDaoSupport implements UserDao {
      * @throws Exception
      */
     @Override
-    public UserIdAndName adminLogin(String uname, String upassword) throws Exception {
-        UserIdAndName user = null;
-        String hql = "from UserIdAndName where telephone = ? or uname = ? and upassword = ? and isAdmin = '是'";
-        List<UserIdAndName> list = (List<UserIdAndName>) this.getHibernateTemplate().find(hql, uname, uname, upassword);
-        for (UserIdAndName user1 : list) {
+    public User adminLogin(String uname, String upassword) throws Exception {
+        User user = null;
+        String hql = "select new User(uid,uname,sex,ugrade) from User where telephone = ? or uname = ? and upassword = ? and isAdmin = '是'";
+        List<User> list = (List<User>) this.getHibernateTemplate().find(hql, uname, uname, upassword);
+        for (User user1 : list) {
             user = user1;
         }
         return user;

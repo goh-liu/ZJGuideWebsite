@@ -1,3 +1,8 @@
+/*加粗左侧导航栏中的字体*/
+.fontBold{
+    font-weight: bold;
+}
+
 /*顶部导航栏*/
 .topNav{
     width: 99.3%;

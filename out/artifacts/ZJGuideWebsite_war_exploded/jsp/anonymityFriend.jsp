@@ -67,7 +67,7 @@
                             </div>
                             <div class="tab-pane fade " id="publish">
                                 <div class="anonWrite">
-                                    <h3>发表匿名内容</h3>
+                                    <h4>发表匿名说说</h4>
                                     <div>
                                         <form class="form-horizontal" id="anonForm"  method="post" enctype="multipart/form-data"
                                               action="${pageContext.request.contextPath}/anon_anonWrite.action">
